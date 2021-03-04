@@ -60,7 +60,7 @@ columns = [
     'recommendation_likelihood',
     'purchaser_influencer',
     'purchaser_recommender',
-    'purchaser_aprover',
+    'purchaser_approver',
     'purchaser_purchaser',
     'purchaser_checkwriter',
     'purchaser_none',
@@ -119,8 +119,6 @@ columns = [
 
 gen_schema(fin, cols=columns)
 
-# %%
-
 # utf-8 errors by default, overcome using engine=python
 df11 = pd.read_csv(
     fin,
@@ -130,11 +128,13 @@ df11 = pd.read_csv(
     header=None
 )
 
+# %%
+
 # convert categorical columns to boolean
 col_cat = [
     'purchaser_influencer',
     'purchaser_recommender',
-    'purchaser_aprover',
+    'purchaser_approver',
     'purchaser_purchaser',
     'purchaser_checkwriter',
     'purchaser_none',
@@ -325,7 +325,7 @@ columns = [
     'occupation',
     'purchaser_influencer',
     'purchaser_recommender',
-    'purchaser_aprover',
+    'purchaser_approver',
     'purchaser_purchaser',
     'purchaser_checkwriter',
     'purchaser_none',
@@ -343,7 +343,7 @@ columns = [
     'lang_CSS',
     'lang_PHP',
     'lang_Python',
-    'lang_Objective-C',
+    'lang_ObjectiveC',
     'lang_Ruby',
     'lang_SQL',
     'lang_C#',
@@ -395,8 +395,6 @@ columns = [
 
 gen_schema(fin, columns)
 
-# %%
-
 df12 = pd.read_csv(
     fin,
     skiprows=2,
@@ -405,10 +403,12 @@ df12 = pd.read_csv(
     header=None
 )
 
+# %%
+
 col_cat = [
     'purchaser_influencer',
     'purchaser_recommender',
-    'purchaser_aprover',
+    'purchaser_approver',
     'purchaser_purchaser',
     'purchaser_checkwriter',
     'purchaser_none',
@@ -450,7 +450,7 @@ col_cat = [
     'lang_CSS',
     'lang_PHP',
     'lang_Python',
-    'lang_Objective-C',
+    'lang_ObjectiveC',
     'lang_Ruby',
     'lang_SQL',
     'lang_C#',
@@ -643,7 +643,7 @@ columns = [
     'timespent_Commuting',
     'purchaser_influencer',
     'purchaser_recommender',
-    'purchaser_aprover',
+    'purchaser_approver',
     'purchaser_purchaser',
     'purchaser_checkwriter',
     'purchaser_none',
@@ -663,7 +663,7 @@ columns = [
     'lang_jQuery',
     'lang_JQuery',
     'lang_Node.js',
-    'lang_Objective-C',
+    'lang_ObjectiveC',
     'lang_PHP',
     'lang_Python',
     'lang_Ruby',
@@ -731,8 +731,6 @@ columns = [
 
 gen_schema(fin, columns)
 
-# %%
-
 df13 = pd.read_csv(
     fin,
     skiprows=2,
@@ -740,6 +738,8 @@ df13 = pd.read_csv(
     names=columns,
     header=None
 )
+
+# %%
 
 col_cat = [
     'interaction_admin',
@@ -777,7 +777,7 @@ col_cat = [
     'timespent_Commuting',
     'purchaser_influencer',
     'purchaser_recommender',
-    'purchaser_aprover',
+    'purchaser_approver',
     'purchaser_purchaser',
     'purchaser_checkwriter',
     'purchaser_none',
@@ -796,7 +796,7 @@ col_cat = [
     'lang_jQuery',
     'lang_JQuery',
     'lang_Node.js',
-    'lang_Objective-C',
+    'lang_ObjectiveC',
     'lang_PHP',
     'lang_Python',
     'lang_Ruby',
@@ -872,6 +872,7 @@ cols = [
     'company_size',
     'industry',
     'occupation',
+    'developer_count',
 ]
 
 for col in cols:
@@ -974,5 +975,15 @@ col_map = {
         "I don't work in tech" : 'NotTech',
         # 'Other'
         # 'Student'
+    },
+    'developer_count' : {
+        '1/5/2013' : 1,
+        '6/15/2013' : 5,
+        '16-30' : 15,
+        '31-50' : 30,
+        '50-100' : 50,
+        '100' : 100
+    }
+}
     }
 }
