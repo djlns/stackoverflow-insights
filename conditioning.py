@@ -34,9 +34,9 @@ def gen_schema(fin, cols=None, second_row=True):
     for i, h1 in enumerate(head1):
         if cols:
             print(f'{cols[i]:>25} :', end=' ')
-        print(f'{h1[:50]:<50}', end=' ')
+        print(f'{h1[:50]:<60}', end=' ')
         if head2:
-            print(f': {head2[i][:25]}', end='')
+            print(f': {head2[i][:30]}', end='')
         print()
 
 
