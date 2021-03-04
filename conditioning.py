@@ -2,9 +2,9 @@
 
 import pandas as pd
 from os.path import join
-import re
+import csv
 
-# pd.set_option('display.max_columns', None)
+pd.set_option('display.max_columns', None)
 basepath = "surveys"
 
 
@@ -18,16 +18,16 @@ def gen_schema(fin, cols=None, second_row=True):
     second_row : (bool) for csv files with a second row for categories
     """
 
-    r = re.compile(
-        r'''\s*([^,"']*?|"(?:[^"\\]|\\.)*"|'(?:[^'\\]|\\.)*')\s*(?:,|$)''',
-        re.VERBOSE
-    )
     with open(fin, 'r') as f:
-        head1 = r.findall(next(f).strip())
+        head1 = csv.reader([next(f).strip()], delimiter=',', quotechar='"')
+        head1 = list(head1)[0]
         if second_row:
-            head2 = r.findall(next(f).strip())
+            head2 = csv.reader([next(f).strip()], delimiter=',', quotechar='"')
+            head2 = list(head2)[0]
         else:
             head2 = False
+    if cols:
+        print(f"len cols: {len(cols)}, len header: {len(head1)}")
     for i, h1 in enumerate(head1):
         if cols:
             print(f'{cols[i]:>25} :', end=' ')
