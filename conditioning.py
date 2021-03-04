@@ -126,3 +126,63 @@ df11 = pd.read_csv(
     names=columns,
     header=None
 )
+
+# convert categorical columns to boolean
+col_cat = [
+    'purchaser_influencer',
+    'purchaser_recommender',
+    'purchaser_aprover',
+    'purchaser_purchaser',
+    'purchaser_checkwriter',
+    'purchaser_none',
+    'purchaser_seller',
+    'purchasetype_hardware',
+    'purchasetype_servers',
+    'purchasetype_software',
+    'purchasetype_pcs',
+    'purchasetype_consultants',
+    'purchasetype_other',
+    'budget_0',
+    'budget_10000',
+    'budget_25000',
+    'budget_40000',
+    'budget_75000',
+    'budget_100000',
+    'budget_150000',
+    'budget_unknown',
+    'lang_Java',
+    'lang_JavaScript',
+    'lang_CSS',
+    'lang_PHP',
+    'lang_Python',
+    'lang_Ruby',
+    'lang_SQL',
+    'lang_C#',
+    'lang_C++',
+    'lang_C',
+    'lang_Perl',
+    'lang_none',
+    'lang_other',
+    'tech_iPhone',
+    'tech_Android',
+    'tech_Blackberry',
+    'tech_OtherSmartPhone',
+    'tech_RegularMobilePhone',
+    'tech_Kindle',
+    'tech_Nook',
+    'tech_BluRay',
+    'tech_HDTV',
+    'tech_AppleTV',
+    'tech_iPad',
+    'tech_Netbook',
+    'tech_PS3',
+    'tech_Xbox',
+    'tech_Wii',
+    'tech_OtherGaming',
+    'tech_Other',
+]
+
+df11[col_cat] = df11[col_cat].fillna(0)
+df11[col_cat] = df11[col_cat].ne(0).mul(1)
+
+df11
