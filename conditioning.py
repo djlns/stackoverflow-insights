@@ -186,3 +186,138 @@ df11[col_cat] = df11[col_cat].fillna(0)
 df11[col_cat] = df11[col_cat].ne(0).mul(1)
 
 df11
+
+# %% columns of interest
+
+cols_lang = [
+    'lang_Java',
+    'lang_JavaScript',
+    'lang_CSS',
+    'lang_PHP',
+    'lang_Python',
+    'lang_Ruby',
+    'lang_SQL',
+    'lang_C#',
+    'lang_C++',
+    'lang_C',
+    'lang_Perl',
+    'lang_none',
+    'lang_other'
+]
+
+cols = [
+    'salary',
+    'satisfaction',
+    'country',
+    'age',
+    'years_experience',
+    'company_size',
+    'industry',
+    'occupation',
+    'project_type',
+]
+
+# for col in cols:
+#    print(f"'{col}': {pd.unique(df11[col])},")
+
+col_map = {
+    "salary" : {
+        "Student / Unemployed" : 0,
+        "<$20,000" : 10000,
+        "$20,000 - $40,000" : 30000,
+        "$40,000 - $60,000" : 50000,
+        "$60,000 - $80,000" : 70000,
+        "$80,000 - $100,000" : 900000,
+        "$100,000 - $120,000" : 110000,
+        "$120,000 - $140,000" : 130000,
+        ">$140,000" : 140000,
+    },
+    "satisfaction": {
+        "FML": 1,
+        "I'm not happy in my job": 2,
+        "It pays the bills": 3,
+        "I enjoy going to work": 4,
+        "So happy it hurts": 5,
+    },
+    # "country": {
+    #     "Africa",
+    #     "Other Europe",
+    #     "India",
+    #     "Germany",
+    #     "Other Asia",
+    #     "Australia",
+    #     "United States of America",
+    #     "United Kingdom",
+    #     "France",
+    #     "Australasia",
+    #     "Canada",
+    #     "Russia",
+    #     "South America",
+    #     "Middle East",
+    #     "Netherlands",
+    #     "Italy",
+    #     "North America (Other)",
+    #     "Mexico",
+    #     "Central America"
+    # },
+    "age": {
+        "< 20" : 18,
+        "20-24" : 22,
+        "25-29" : 27,
+        "30-34" : 32,
+        "35-39" : 37,
+        "40-50" : 45,
+        "51-60" : 55,
+        ">60" : 60,
+    },
+    "years_experience": {
+        "<2" : 2,
+        "41310" : 5,
+        "41435" : 7,
+        "11" : 11,
+    },
+    "company_size": {
+        "Student" : 0,
+        "Start Up (1-25)" : 25,
+        "Mature Small Business (25-100)" : 100,
+        "Mid Sized (100-999)" : 500,
+        "Fortune 1000 (1,000+)" : 1000,
+        "Other (not working, consultant, etc.)" : 1,
+    },
+    "industry": {
+        "Software Products" : "Software",
+        "Foundation / Non-Profit" : "NonProfit",
+        "Web Services" : "Web",
+        "Finance / Banking" : "Finance",
+        # "Consulting",
+        # "Manufacturing",
+        # "Education",
+        # "Other",
+        # "Retail",
+        # "Healthcare",
+        # "Gaming",
+        # "Advertising",
+    },
+    "occupation": {
+        "Web Application Developer" : "Web",
+        "Server Programmer" : "Server",
+        "Executive (VP of Eng, CTO, CIO, etc.)" : "Executive",
+        "Desktop Application Developer" : "Desktop",
+        "IT Staff / System Administrator" : "System",
+        "Database Administrator" : "Databse",
+        "Manager of Developers or Team Leader" : "Manager",
+        "Embedded Application Developer" : "Embedded",
+        "Kernel / Driver Developer" : "Kernel",
+        "Systems Analyst" : "SystemAnalyst",
+        "IT Manager" : "IT",
+        # "Student",
+        # "Other",
+    },
+    # "project_type": {
+    #     "Mobile",
+    #     "Enterprise",
+    #     "SaaS",
+    #     "Other",
+    #     "Web Platform",
+    # }
+}
