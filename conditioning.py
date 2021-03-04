@@ -1,6 +1,7 @@
 # %%
 
 import pandas as pd
+import numpy as np
 from os.path import join
 import csv
 
@@ -28,6 +29,8 @@ def gen_schema(fin, cols=None, second_row=True):
             head2 = False
     if cols:
         print(f"len cols: {len(cols)}, len header: {len(head1)}")
+        if len(cols) != len(head1):
+            cols = None
     for i, h1 in enumerate(head1):
         if cols:
             print(f'{cols[i]:>25} :', end=' ')
@@ -111,7 +114,7 @@ columns = [
     'tech_OtherGaming',
     'tech_Other',
     'spent_on_tech',
-    'frequent_site',
+    'so_frequent_site',
 ]
 
 gen_schema(fin, cols=columns)
@@ -189,22 +192,6 @@ df11
 
 # %% columns of interest
 
-cols_lang = [
-    'lang_Java',
-    'lang_JavaScript',
-    'lang_CSS',
-    'lang_PHP',
-    'lang_Python',
-    'lang_Ruby',
-    'lang_SQL',
-    'lang_C#',
-    'lang_C++',
-    'lang_C',
-    'lang_Perl',
-    'lang_none',
-    'lang_other'
-]
-
 cols = [
     'salary',
     'satisfaction',
@@ -219,6 +206,8 @@ cols = [
 
 # for col in cols:
 #    print(f"'{col}': {pd.unique(df11[col])},")
+
+# %% create a map to ensure consistency between years
 
 col_map = {
     "salary" : {
