@@ -109,7 +109,7 @@ columns = [
     'lang_jQuery',
     'lang_JQuery',
     'lang_Node.js',
-    'lang_ObjectiveC',
+    'lang_Objective-C',
     'lang_PHP',
     'lang_Python',
     'lang_Ruby',
@@ -376,7 +376,7 @@ col_map = {
         '35-39' : 37,
         '40-50' : 45,
         '51-60' : 55,
-        '>60' : 60,
+        '>60' : 65,
     },
     'years_experience': {
         '<2' : 2,
@@ -408,14 +408,14 @@ col_map = {
     },
     'occupation': {
         'Enterprise Level Services' : 'Enterprise',  # *
-        'Back-End Web Developer' : 'WebBackend',  # *
+        'Back-End Web Developer' : 'Web',  # *
         'Desktop Software Developer' : 'Desktop',
         'Full-Stack Web Developer' : 'Web',
         'Manager of Developers or Team Leader' : 'Manager',
         'Executive (VP of Eng, CTO, CIO, etc.)' : 'Executive',
         'Mobile Application Developer' : 'Mobile',  # *
         'IT Staff / System Administrator' : 'System',
-        'Front-End Web Developer' : 'WebFrontend',  # *
+        'Front-End Web Developer' : 'Web',  # *
         'Database Administrator' : 'Database',
         'Embedded Application Developer' : 'Embedded',
         "I don't work in tech" : 'NotTech',
@@ -431,4 +431,3 @@ col_map = {
         '100' : 100
     }
 }
-

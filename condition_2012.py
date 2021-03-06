@@ -227,7 +227,7 @@ col_map = {
         '$80,000 - $100,000' : 90000,
         '$100,000 - $120,000' : 11000,
         '$120,000 - $140,000' : 130000,
-        '>$140,000' : 140000,
+        '>$140,000' : 150000,
     },
     'satisfaction': {
         'I wish I had a job!' : 0,
@@ -267,7 +267,7 @@ col_map = {
         '35-39' : 37,
         '40-50' : 45,
         '51-60' : 55,
-        '>60' : 60,
+        '>60' : 65,
     },
     'years_experience': {
         '<2' : 2,
@@ -307,7 +307,7 @@ col_map = {
         "Manager of Developers or Team Leader" : "Manager",
         "Embedded Application Developer" : "Embedded",
         "Kernel / Driver Developer" : "Kernel",
-        "Systems Analyst" : "SystemAnalyst",
+        "Systems Analyst" : "Analyst",
         "IT Manager" : "IT",
         "I don't work in tech" : "NotTech",
         # 'Student',

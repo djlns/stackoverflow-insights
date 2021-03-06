@@ -30,7 +30,7 @@ columns = [
     'os',
     'os_other',
     'tech_Android',
-    'tech_Arduino',
+    'tech_Arduino/RaspberryPi',
     'tech_AngularJS',
     'tech_C',
     'tech_C++',
@@ -53,7 +53,7 @@ columns = [
     'tech_Matlab',
     'tech_MongoDB',
     'tech_Node.js',
-    'tech_ObjectiveC',
+    'tech_Objective-C',
     'tech_Perl',
     'tech_PHP',
     'tech_Python',
@@ -73,7 +73,7 @@ columns = [
     'tech_Wordpress',
     'tech_Other',
     'interest_Android',
-    'interest_Arduino',
+    'interest_Arduino/RaspberryPi',
     'interest_AngularJS',
     'interest_C',
     'interest_C++',
@@ -96,7 +96,7 @@ columns = [
     'interest_Matlab',
     'interest_MongoDB',
     'interest_Node.js',
-    'interest_ObjectiveC',
+    'interest_Objective-C',
     'interest_Perl',
     'interest_PHP',
     'interest_Python',
@@ -442,3 +442,107 @@ df15[col_cat] = df15[col_cat].ne(0).mul(1)
 df15
 
 # %%
+
+cols = [
+    'salary',
+    'age',
+    'years_experience',
+    'industry',
+    'occupation',
+    'satisfaction'
+]
+
+for col in cols:
+    print(f"'{col}': {pd.unique(df15[col])},")
+
+# %%
+
+col_map = {
+    'salary' : {
+        'Rather not say' : np.nan,
+        'Unemployed' : 0,
+        'Less than $20,000' : 10000,
+        '$20,000 - $40,000' : 30000,
+        '$40,000 - $60,000' : 50000,
+        '$60,000 - $80,000' : 70000,
+        '$80,000 - $100,000' : 90000,
+        '$100,000 - $120,000' : 110000,
+        '$120,000 - $140,000' : 130000,
+        '$140,000 - $160,000' : 150000,
+        'More than $160,000' : 170000,
+    },
+    'age': {
+        'Prefer not to disclose' : np.nan,
+        '< 20' : 18,
+        '20-24' : 22,
+        '25-29' : 27,
+        '30-34' : 32,
+        '35-39' : 37,
+        '40-50' : 45,
+        '51-60' : 55,
+        '> 60' : 65,
+    },
+    'years_experience': {
+        'Less than 1 year' : 1,
+        '1 - 2 years' : 2,
+        '2 - 5 years' : 5,
+        '6 - 10 years' : 7,
+        '11+ years' : 11,
+    },
+    'industry': {
+        'Finance / Banking' : 'Financing',
+        'Consumer Products' : 'Consumer',
+        'Foundation / Non-Profit' : 'NonProfit',
+        'Media / Advertising' : 'Media',
+        'Other (please specify)' : 'Other',
+        "I'm a student" : 'Student',
+        'Software Products' : 'Software',
+        'Not Currently Employed' : 'NotEmployed',
+        'Web Services' : 'Web',
+        # 'Aerospace',
+        # 'Consulting',
+        # 'Defense',
+        # 'Education'
+        # 'Gaming',
+        # 'Government'
+        # 'Healthcare',
+        # 'Internet',
+        # 'Manufacturing'
+        # 'Retail',
+        # 'Telecommunications',
+    },
+    'occupation': {
+        'Back-end web developer' : "Web",
+        'Business intelligence or data warehousing expert' : "DataWarehouse",
+        'Data scientist' : "DataScientist",
+        'Database administrator' : 'Database',
+        'Desktop developer': 'Desktop',
+        'Developer with a statistics or mathematics background' : 'Stats',
+        'Embedded application developer' : 'Embedded',
+        'Enterprise level services developer' : 'Enterprise',
+        'Executive (VP of Eng., CTO, CIO, etc.)' : 'Executive',
+        'Front-end web developer' : 'Web',
+        'Full-stack web developer' : 'Web',
+        'Graphics programmer' : 'Graphics',
+        'Growth hacker' : 'GrowthHacker',
+        'Machine learning developer' : 'ML',
+        'Mobile developer' : 'Mobile',
+        'Mobile developer - Android' : 'Mobile',
+        'Mobile developer - iOS' : 'Mobile',
+        'Mobile developer - Windows Phone' : 'Mobile',
+        'Product manager' : 'ProductManager',
+        'Quality Assurance' : 'Quality',
+        'System administrator' : 'System',
+        # 'DevOps',
+        # 'Student',
+        # 'Designer',
+    },
+    'satisfaction': {
+        'Other (please specify)' : 0,
+        'I hate my job' : 1,
+        "I'm somewhat dissatisfied with my job" : 2,
+        "I'm neither satisfied nor dissatisfied with my job" : 3,
+        "I'm somewhat satisfied with my job" : 4,
+        'I love my job' : 5
+    }
+}

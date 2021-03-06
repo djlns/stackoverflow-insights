@@ -93,7 +93,7 @@ columns = [
     'lang_Java',
     'lang_JavaScript',
     'lang_Node.js',
-    'lang_ObjectiveC',
+    'lang_Objective-C',
     'lang_PHP',
     'lang_Python',
     'lang_Ruby',
@@ -111,7 +111,7 @@ columns = [
     'interest_Hadoop',
     'interest_AngularJS',
     'interest_Cordova',
-    'interest_ArduinoRpi',
+    'interest_Arduino/RaspberryPi',
     'os',
     'tech_iPhone',
     'tech_Android',
@@ -298,115 +298,17 @@ for col in cols:
 
 col_map = {
     'salary': {
-        '$20,000 - $40,000' : 30000,
+        'Rather not say' : np.nan,
         'Student / Unemployed' : 0,
         '<$20,000' : 10000,
-        'Rather not say' : np.nan,
-        '$80,000 - $100,000' : 90000,
-        '$60,000 - $80,000' : 70000,
+        '$20,000 - $40,000' : 30000,
         '$40,000 - $60,000' : 50000,
-        '>$140,000' : 140000,
+        '$60,000 - $80,000' : 70000,
+        '$80,000 - $100,000' : 90000,
         '$100,000 - $120,000' : 110000,
-        '$120,000 - $140,000' : 130000
+        '$120,000 - $140,000' : 130000,
+        '>$140,000' : 150000,
     },
-    # 'country': {
-    #     'India',
-    #     'Thailand',
-    #     'Iran',
-    #     'Ukraine',
-    #     'Denmark',
-    #     'United Kingdom'
-    #     'New Zealand',
-    #     'Israel',
-    #     'Saudi Arabia',
-    #     'Czech Republic',
-    #     'United States'
-    #     'Canada',
-    #     'Germany',
-    #     'Brazil',
-    #     'Ireland',
-    #     'Japan',
-    #     'Finland',
-    #     'Lithuania'
-    #     'Italy',
-    #     'Russia',
-    #     'France',
-    #     'Ecuador',
-    #     'Spain',
-    #     'Vietnam',
-    #     'Chile',
-    #     'China'
-    #     'Netherlands',
-    #     'Turkey',
-    #     'Portugal',
-    #     'Egypt',
-    #     'Belgium',
-    #     'Cambodia',
-    #     'Mexico'
-    #     'Puerto Rico',
-    #     'Switzerland',
-    #     'Croatia',
-    #     'Romania',
-    #     'Jordan',
-    #     'Philippines'
-    #     'Austria',
-    #     'Bolivia',
-    #     'Algeria',
-    #     'Poland',
-    #     'Tunisia',
-    #     'Argentina',
-    #     'Bulgaria'
-    #     'Norway',
-    #     'Malaysia',
-    #     'Pakistan',
-    #     'Australia',
-    #     'Greece',
-    #     'Sweden'
-    #     'South Africa',
-    #     'Slovakia',
-    #     'Cyprus',
-    #     'Moldova',
-    #     'Morocco',
-    #     'Palestine'
-    #     'Luxembourg',
-    #     'Hungary',
-    #     'Bangladesh',
-    #     'Dominican Republic',
-    #     'Sri Lanka'
-    #     'Armenia',
-    #     'Belarus',
-    #     'Kazakhstan',
-    #     'Iceland',
-    #     'Hong Kong',
-    #     'Slovenia'
-    #     'Venezuela',
-    #     'Uruguay',
-    #     'Other',
-    #     'Latvia',
-    #     'Serbia',
-    #     'Estonia',
-    #     'Singapore'
-    #     'Nepal',
-    #     'United Arab Emirates',
-    #     'Costa Rica',
-    #     'Colombia',
-    #     'El Salvador'
-    #     'Lebanon',
-    #     'Bosnia and Herzegovina',
-    #     'Taiwan',
-    #     'Kuwait',
-    #     'Peru'
-    #     'Macedonia [FYROM]',
-    #     'Myanmar [Burma]',
-    #     'Indonesia',
-    #     'South Korea',
-    #     'Georgia'
-    #     'Malta',
-    #     'Kenya',
-    #     'Nigeria',
-    #     'Guatemala',
-    #     'Ghana'
-    # },
     'developer_count' : {
         '1/5/2014' : 1,
         '6/15/2014' : 5,
@@ -423,7 +325,7 @@ col_map = {
         '35-39' : 37,
         '40-50' : 45,
         '51-60' : 55,
-        '>60' : 60,
+        '>60' : 65,
     },
     'years_experience': {
         '<2' : 2,
@@ -449,14 +351,14 @@ col_map = {
         # 'Gaming'
     },
     'occupation': {
-        'Back-End Web Developer' : 'WebBackend',
+        'Back-End Web Developer' : 'Web',
         'Desktop Software Developer' : 'Desktop',
         'Full-Stack Web Developer' : 'Web',
         'Database Administrator' : 'Database',
         'IT Staff / System Administrator' : 'System',
         "I don't work in tech" : 'NotTech',
         'Enterprise Level Services' : 'Enterprise',
-        'Front-End Web Developer' : 'WebFrontend',
+        'Front-End Web Developer' : 'Web',
         'Manager of Developers or Team Leader' : 'Manager',
         'Mobile Application Developer' : 'Mobile',
         'Embedded Application Developer' : 'Embeded',
@@ -466,4 +368,3 @@ col_map = {
         # 'DevOps',
     }
 }
-
