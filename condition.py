@@ -24,7 +24,7 @@ def xzload(filename):
         return pickle.loads(f.read())
 
 
-def load(year, csvfile, skiprows, manual_dummy):
+def load(year, csvfile, skiprows):
     """
     load and standardise survey columns
     year : survey year
@@ -88,16 +88,16 @@ def string_dummy(df, cat_cols):
 # %%
 
 surveys = [
-    load(2011, "2011 Stack Overflow Survey Results.csv", 2, True),
-    load(2012, "2012 Stack Overflow Survey Results.csv", 2, True),
-    load(2013, "2013 Stack Overflow Survey Responses.csv", 2, True),
-    load(2014, "2014 Stack Overflow Survey Responses.csv", 2, True),
-    load(2015, "2015 Stack Overflow Developer Survey Responses.csv", 2, True),
-    load(2016, "2016 Stack Overflow Survey Results/2016 Stack Overflow Survey Responses.csv", 1, True),
-    load(2017, "developer_survey_2017/survey_results_public.csv", 1, False),
-    load(2018, "developer_survey_2018/survey_results_public.csv", 1, False),
-    load(2019, "developer_survey_2019/survey_results_public.csv", 1, False),
-    load(2020, "developer_survey_2020/survey_results_public.csv", 1, False),
+    load(2011, "2011 Stack Overflow Survey Results.csv", 2),
+    load(2012, "2012 Stack Overflow Survey Results.csv", 2),
+    load(2013, "2013 Stack Overflow Survey Responses.csv", 2),
+    load(2014, "2014 Stack Overflow Survey Responses.csv", 2),
+    load(2015, "2015 Stack Overflow Developer Survey Responses.csv", 2),
+    load(2016, "2016 Stack Overflow Survey Results/2016 Stack Overflow Survey Responses.csv", 1),
+    load(2017, "developer_survey_2017/survey_results_public.csv", 1),
+    load(2018, "developer_survey_2018/survey_results_public.csv", 1),
+    load(2019, "developer_survey_2019/survey_results_public.csv", 1),
+    load(2020, "developer_survey_2020/survey_results_public.csv", 1),
 ]
 
 xzsave(surveys, "surveys.pz")
