@@ -9,26 +9,7 @@ survey_folder = join("sources", "surveys")
 schema_folder = join("schemas")
 
 pd.set_option('display.max_columns', None)
-
-interest_cols = [
-    'salary',
-    'country'
-    'age',
-    'education',
-    'employment',
-    'gender',
-    'industry',
-    'job_seek',
-    'lang',
-    'org_size',
-    'os',
-    'remote',
-    'satisfaction',
-    'status',
-    'undergrad',
-    'years_coding',
-    'years_codingprof'
-]
+pd.set_option('display.width', 120)
 
 
 def xzsave(obj, filename):
@@ -65,7 +46,7 @@ def load(year, csvfile, skiprows, manual_dummy):
     return df
 
 
-def prep_label_standardisation(dfs, cols):
+def prep_label_standardisation(dfs, cols, split=None):
     """
     prep dict for common labeling of a column across datasets
     """
@@ -76,9 +57,13 @@ def prep_label_standardisation(dfs, cols):
             if col in df.columns and df[col].dtype == object:
                 unique.extend(list(pd.unique(df[col].dropna())))
         unique = sorted(list(set(unique)))
-        print(f"    '{col}': {{")
+        if split:
+            unique = [u.split(';') for u in unique]
+            unique = [v.strip() for s in unique for v in s]
+            unique = sorted(list(set(unique)))
+        print(f'    "{col}": {{')
         for u in unique:
-            print(f"        '{u}' : ")
+            print(f'        "{u}" : ,')
         print("    }")
     print('}')
 
@@ -95,7 +80,7 @@ def manual_dummy(df, cat_cols):
 def string_dummy(df, cat_cols):
     """ convert string lists separated by ";" to dummy_cols """
     for col in cat_cols:
-        a = df.pop(col).str.get_dummies('; ', )
+        a = df.pop(col).str.get_dummies(';', )
         a = a.rename(columns=lambda x : f'{col}_{x.replace(" ", "")}')
         df = pd.concat([df, a])
 
@@ -122,48 +107,64 @@ xzsave(surveys, "surveys.pz")
 surveys = xzload("surveys.pz")
 
 # %% columns of interest
+# note that lang is made up of dummy columns for 2011-2015
 
 interest_cols = [
     'salary',
-    'country'
-    'age',
-    'education',
-    'employment',
-    'gender',
-    'industry',
-    'job_seek',
-    'lang',
-    'org_size',
-    'os',
-    'remote',
     'satisfaction',
-    'status',
-    'undergrad',
+    'age',
+    'gender',
     'years_coding',
-    'years_codingprof'
+    'dev_type',
+    'employment',
+    'industry',
+    'org_size',
+    'job_seek',
+    'remote',
+    'education',
+    'undergrad',
+    'os',
+    'lang',
+    # 'country',  # deal with country later
 ]
 
 # %% lets see which years have which columns
 
 ft = pd.DataFrame(columns=interest_cols, index=range(2011, 2021))
 for s, y in zip(surveys, range(2011, 2021)):
-    ft.loc[y] = ft.columns.map(lambda x: x in s.columns)
+    ft.loc[y] = ft.columns.map(lambda x: x in s.columns).astype(int)
 
-ft
-# %%
+print(ft.T)
 
-need_to_split = [
-    "education"
+#              2011 2012 2013 2014 2015 2016 2017 2018 2019 2020
+# salary          1    1    1    1    1    1    1    1    1    1
+# satisfaction    1    1    1    0    1    1    1    1    1    1
+# age             1    1    1    1    1    1    0    1    1    1
+# gender          0    0    0    1    1    1    1    1    1    1
+# years_coding    1    1    1    1    1    1    1    1    1    1
+# dev_type        1    1    1    1    1    1    1    1    1    1
+# employment      0    0    0    0    1    1    1    1    1    1
+# industry        1    1    1    1    1    1    1    0    0    0
+# org_size        1    1    1    0    0    1    1    1    1    1
+# job_seek        0    0    0    1    1    1    1    1    1    1
+# remote          0    0    0    1    1    1    1    0    1    0
+# education       0    0    0    0    0    1    1    1    1    1
+# undergrad       0    0    0    0    0    0    1    1    1    1
+# os              1    1    1    1    1    1    0    1    1    1
+# lang            0    0    0    0    0    1    1    1    1    1
+
+# %% manually map values between surveys where possible
+
+prep_label_standardisation(surveys, interest_cols, split=';')
+
+
+# %% 
+
+split_2011 = [
+    "lang",
 ]
 
-map_cols = [
-    "salary",
-    "org_size",
-    "age",
-    "employment"
+split_2017 = [
+    "dev_type",
+    "education",
 ]
-
-prep_label_standardisation(surveys, [])
-
-
-# %%
