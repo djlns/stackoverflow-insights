@@ -1,128 +1,128 @@
-country, What Country or Region do you live in?,Response
-state, Which US State or Territory do you live in?,Response
-age, How old are you?,Response
-years_coding, How many years of IT/Programming experience do you have?,Response
-industry, How would you best describe the industry you currently work in?,Response
-org_size, How many people work for your company?,Response
-dev_type, Which of the following best describes your occupation?,Response
-developer_count, "Including yourself, how many developers are employed at your company?",Response
-team_size, How large is the team that you work on?,Response
-interaction_admin, What other departments / roles do you interact with regularly?,System Administrators
-interaction_designers, ,Designers
-interaction_product, ,Product Managers
-interaction_testers, ,Testers / Quality Assurance
-interaction_technical, ,Technical Support
-interaction_sales, ,Sales / Marketing
-interaction_consultants, ,Consultants
-interaction_customers, ,Customers
-interaction_finance, ,Finance
-interaction_hr, ,Human Resources
-mobileapp_iPhone, "If your company has a native mobile app, what platforms do you support?",iPhone
-mobileapp_iPad, ,iPad
-mobileapp_Android, ,Android phone
-mobileapp_AndroidTablet, ,Android tablet
-mobileapp_Blackberry, ,Blackberry
-mobileapp_Other, ,Other
-mobileapp_None, ,No mobile app
-softfunds_Advertising, "If you make a software product, how does your company make money? (You can choose more than one)",Advertising
-softfunds_DirectConsumer, ,Direct sales to consumers
-softfunds_DirectCompanies, ,Direct sales to companies
-softfunds_SaaS, ,Software as a service / recurring billing
-softfunds_MobileApp, ,Mobile app sales
-softfunds_Consulting, ,Consulting
-softfunds_Grants, ,Grants / outside fund-raising
-softfunds_Other, ,Other
-timespent_NewFeatures, "In an average week, how do you spend your time?",Developing new features
-timespent_Refactoring, ,Refactoring / code quality
-timespent_Bugs, ,Fixing bugs
-timespent_Support, ,Technical support
-timespent_Meetings, ,Meetings
-timespent_Learning, ,Learning new skills
-timespent_Surfing, ,Surfing the Internet
-timespent_Commuting, ,Commuting
-purchaser_influencer, What is your involvement in purchasing products or services for the company you work for? (You can choose more than one),I can recommend or request products
-purchaser_recommender, ,"I influence purchasing decisions, but don't have final approval"
-purchaser_approver, ,I have a discretionary budget at my disposal
-purchaser_purchaser, ,I can buy anything I want without asking anyone
-purchaser_checkwriter, ,Check Writer
-purchaser_none, ,No Involvement
-purchaser_seller, ,I'm a Seller
-purchasetype_hardware, What types of purchases are you involved in?,Hardware
-purchasetype_servers, ,Servers
-purchasetype_software, ,Software
-purchasetype_pcs, ,"User Equipment: Monitors, PCs, Laptops"
-purchasetype_consultants, ,Consultants
-purchasetype_other, ,Other
-budget, "What is your budget for outside expenditures (hardware, software, consulting, etc) for 2013?",Response
-lang_C, Which of the following languages or technologies have you used significantly in the past year?,C
-lang_C++, ,C++
-lang_C#, ,C#
-lang_Java, ,Java
-lang_JavaScript, ,JavaScript
-lang_jQuery, ,jQuery
-lang_JQuery, ,JQuery
-lang_Node.js, ,Node.js
-lang_Objective-C, ,Objective-C
-lang_PHP, ,PHP
-lang_Python, ,Python
-lang_Ruby, ,Ruby
-lang_SQL, ,SQL
-lang_Other, ,Other (please specify)
-interest_Node.js, Which technologies are you excited about?,Node.js
-interest_Haskell, ,Haskell
-interest_CoffeeScript, ,CoffeeScript
-interest_Dart, ,Dart
-interest_TypeScript, ,TypeScript
-interest_C++11, ,C++11
-interest_WinRT, ,WinRT
-interest_Redis, ,Redis
-interest_MongoDB, ,MongoDB
-interest_F#, ,F#
-interest_PhoneGap, ,PhoneGap
-os, Which desktop operating system do you use the most?,Response
-rate_Salary, "Please rate how important each of the following characteristics of a company/job offer are to you.    Please select a MAXIMUM of 3 items as ""Non-Negotiables"" to help us identify the most important items, those where you would never consider a company if they didn't meet them.",High Base Compensation
-rate_Stock, ,Stock Options/Profit Sharing Program
-rate_Identification, ,Identification With the Company/Goals
-rate_Excitement, ,Excitement About the Company's Products
-rate_Opportunity, ,Opportunity to Use/Learn New Technologies
-rate_Growth, ,Room for Growth of Skills/Knowledge
-rate_OfficeSpace, ,"High Quality Office Space (amenities, lounge space, free food, etc)"
-rate_team, ,High Caliber Team (is everyone else smart/hardworking)
-rate_PositiveOrg, ,"Positive Organization Structure (not much bureaucracy, helpful management)"
-rate_Control, ,Lots of Control Over Your Own Work
-rate_Workstation, ,"Quality of Workstation (dream machine, 30inch monitors, etc)"
-rate_Autonomy, ,Autonomy Over Budget/Expenditures
-rate_City, ,Office in a Desirable City/Area
-rate_Convenient, ,Convenient Commute or Telecommute Options
-rate_WorkWeek, ,40 hour work week
-rate_Weekends, ,Limited night / weekend work
-job_12months, Have you changed jobs in the last 12 months?,Response
-satisfaction, What best describes your career / job satisfaction?,Response
-salary, "Including bonus, what is your annual compensation in USD?",Response
-tech_iPhone, Which technology products do you own? (You can choose more than one),iPhone
-tech_Android, ,Android
-tech_Blackberry, ,Blackberry
-tech_WindowsPhone, ,Windows Phone
-tech_iPad, ,iPad
-tech_AndroidTablet, ,Android Tablet
-tech_KindleFire, ,Kindle Fire
-tech_WindowsTablet, ,Windows Tablet
-tech_Kindle, ,Kindle
-tech_Nook, ,Nook
-tech_PS3, ,PS3
-tech_Xbox, ,Xbox
-tech_Wii, ,Wii
-tech_Other, ,Other (please specify)
-spent_on_tech, "In the last 12 months, how much money have you spent on personal technology-related purchases?",Response
-so_ads_relevant, Please rate the advertising you've seen on Stack Overflow,The ads are relevant
-so_ads_entertaining, ,The ads are entertaining
-so_ads_informative, ,The ads are Informative
-so_ads_clicks, ,I click on ads that interest me
-so_ads_trial, ,I've taken a trial/purchased a product from ads
-so_ads_blocker, ,What ads? I use an ad blocker
-so_which_ads, What advertisers do you remember seeing on Stack Overflow?,Open-Ended Response
-so_reputation, What is your current Stack Overflow reputation?,Response
-so_use_look, How do you use Stack Overflow?,Read other people's questions to solve my problems
-so_use_ask, ,Ask questions to solve problems
-so_use_answer, ,Answer questions I know the answer to
-so_use_other, ,Other (please specify)
+country,What Country or Region do you live in?,Response
+state,Which US State or Territory do you live in?,Response
+age,How old are you?,Response
+years_coding,How many years of IT/Programming experience do you have?,Response
+industry,How would you best describe the industry you currently work in?,Response
+org_size,How many people work for your company?,Response
+dev_type,Which of the following best describes your occupation?,Response
+developer_count,"Including yourself, how many developers are employed at your company?",Response
+team_size,How large is the team that you work on?,Response
+interaction_admin,What other departments / roles do you interact with regularly?,System Administrators
+interaction_designers,,Designers
+interaction_product,,Product Managers
+interaction_testers,,Testers / Quality Assurance
+interaction_technical,,Technical Support
+interaction_sales,,Sales / Marketing
+interaction_consultants,,Consultants
+interaction_customers,,Customers
+interaction_finance,,Finance
+interaction_hr,,Human Resources
+mobileapp_iPhone,"If your company has a native mobile app, what platforms do you support?",iPhone
+mobileapp_iPad,,iPad
+mobileapp_Android,,Android phone
+mobileapp_AndroidTablet,,Android tablet
+mobileapp_Blackberry,,Blackberry
+mobileapp_Other,,Other
+mobileapp_None,,No mobile app
+softfunds_Advertising,"If you make a software product, how does your company make money? (You can choose more than one)",Advertising
+softfunds_DirectConsumer,,Direct sales to consumers
+softfunds_DirectCompanies,,Direct sales to companies
+softfunds_SaaS,,Software as a service / recurring billing
+softfunds_MobileApp,,Mobile app sales
+softfunds_Consulting,,Consulting
+softfunds_Grants,,Grants / outside fund-raising
+softfunds_Other,,Other
+timespent_NewFeatures,"In an average week, how do you spend your time?",Developing new features
+timespent_Refactoring,,Refactoring / code quality
+timespent_Bugs,,Fixing bugs
+timespent_Support,,Technical support
+timespent_Meetings,,Meetings
+timespent_Learning,,Learning new skills
+timespent_Surfing,,Surfing the Internet
+timespent_Commuting,,Commuting
+purchaser_influencer,What is your involvement in purchasing products or services for the company you work for? (You can choose more than one),I can recommend or request products
+purchaser_recommender,,"I influence purchasing decisions, but don't have final approval"
+purchaser_approver,,I have a discretionary budget at my disposal
+purchaser_purchaser,,I can buy anything I want without asking anyone
+purchaser_checkwriter,,Check Writer
+purchaser_none,,No Involvement
+purchaser_seller,,I'm a Seller
+purchasetype_hardware,What types of purchases are you involved in?,Hardware
+purchasetype_servers,,Servers
+purchasetype_software,,Software
+purchasetype_pcs,,"User Equipment: Monitors, PCs, Laptops"
+purchasetype_consultants,,Consultants
+purchasetype_other,,Other
+budget,"What is your budget for outside expenditures (hardware, software, consulting, etc) for 2013?",Response
+lang_C,Which of the following languages or technologies have you used significantly in the past year?,C
+lang_C++,,C++
+lang_C#,,C#
+lang_Java,,Java
+lang_JavaScript,,JavaScript
+lang_jQuery,,jQuery
+lang_JQuery,,JQuery
+lang_Node.js,,Node.js
+lang_Objective-C,,Objective-C
+lang_PHP,,PHP
+lang_Python,,Python
+lang_Ruby,,Ruby
+lang_SQL,,SQL
+lang_Other,,Other (please specify)
+interest_Node.js,Which technologies are you excited about?,Node.js
+interest_Haskell,,Haskell
+interest_CoffeeScript,,CoffeeScript
+interest_Dart,,Dart
+interest_TypeScript,,TypeScript
+interest_C++11,,C++11
+interest_WinRT,,WinRT
+interest_Redis,,Redis
+interest_MongoDB,,MongoDB
+interest_F#,,F#
+interest_PhoneGap,,PhoneGap
+os,Which desktop operating system do you use the most?,Response
+rate_Salary,"Please rate how important each of the following characteristics of a company/job offer are to you.",High Base Compensation
+rate_Stock,,Stock Options/Profit Sharing Program
+rate_Identification,,Identification With the Company/Goals
+rate_Excitement,,Excitement About the Company's Products
+rate_Opportunity,,Opportunity to Use/Learn New Technologies
+rate_Growth,,Room for Growth of Skills/Knowledge
+rate_OfficeSpace,,"High Quality Office Space (amenities, lounge space, free food, etc)"
+rate_team,,High Caliber Team (is everyone else smart/hardworking)
+rate_PositiveOrg,,"Positive Organization Structure (not much bureaucracy, helpful management)"
+rate_Control,,Lots of Control Over Your Own Work
+rate_Workstation,,"Quality of Workstation (dream machine, 30inch monitors, etc)"
+rate_Autonomy,,Autonomy Over Budget/Expenditures
+rate_City,,Office in a Desirable City/Area
+rate_Convenient,,Convenient Commute or Telecommute Options
+rate_WorkWeek,,40 hour work week
+rate_Weekends,,Limited night / weekend work
+job_12months,Have you changed jobs in the last 12 months?,Response
+satisfaction,What best describes your career / job satisfaction?,Response
+salary,"Including bonus, what is your annual compensation in USD?",Response
+tech_iPhone,Which technology products do you own? (You can choose more than one),iPhone
+tech_Android,,Android
+tech_Blackberry,,Blackberry
+tech_WindowsPhone,,Windows Phone
+tech_iPad,,iPad
+tech_AndroidTablet,,Android Tablet
+tech_KindleFire,,Kindle Fire
+tech_WindowsTablet,,Windows Tablet
+tech_Kindle,,Kindle
+tech_Nook,,Nook
+tech_PS3,,PS3
+tech_Xbox,,Xbox
+tech_Wii,,Wii
+tech_Other,,Other (please specify)
+spent_on_tech,"In the last 12 months, how much money have you spent on personal technology-related purchases?",Response
+so_ads_relevant,Please rate the advertising you've seen on Stack Overflow,The ads are relevant
+so_ads_entertaining,,The ads are entertaining
+so_ads_informative,,The ads are Informative
+so_ads_clicks,,I click on ads that interest me
+so_ads_trial,,I've taken a trial/purchased a product from ads
+so_ads_blocker,,What ads? I use an ad blocker
+so_which_ads,What advertisers do you remember seeing on Stack Overflow?,Open-Ended Response
+so_reputation,What is your current Stack Overflow reputation?,Response
+so_use_look,How do you use Stack Overflow?,Read other people's questions to solve my problems
+so_use_ask,,Ask questions to solve problems
+so_use_answer,,Answer questions I know the answer to
+so_use_other,,Other (please specify)

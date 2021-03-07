@@ -1,120 +1,120 @@
-country, What Country do you live in?,Response
-country_other, ,Other (please specify)
-state, Which US State or Territory do you live in?,Response
-age, How old are you?,Response
-gender, What is your gender?,Response
-years_coding, How many years of IT/Programming experience do you have?,Response
-dev_type, Which of the following best describes your occupation?,Response
-salary, "Including bonus, what is your annual compensation in USD?",Response
-industry, How would you best describe the industry you currently work in?,Response
-developer_count, How many developers are employed at your company?,Response
-remote, Do you work remotely?,Response
-remote_enjoyment, Do you enjoy working remotely?,Response
-remote_location, Where do you work remotely most of the time?,Response
-mobileapp_iPhone, "If your company has a native mobile app, what platforms do you support?",iPhone
-mobileapp_iPad, ,iPad
-mobileapp_Android, ,Android Phone
-mobileapp_AndroidTablet, ,Android Tablet
-mobileapp_WindowsPhone, ,Windows Phone
-mobileapp_Other, ,Other
-mobileapp_None, ,No mobile app
-timespent_NewFeatures, "In an average week, how do you spend your time at work?",Developing new features
-timespent_Refactoring, ,Refactoring / code quality
-timespent_Bugs, ,Fixing bugs
-timespent_Support, ,Technical support
-timespent_Meetings, ,Meetings
-timespent_Learning, ,Learning new skills
-timespent_Surfing, ,Surfing the Internet
-timespent_NewJob, ,Looking for a new job
-timespent_StackExchange, ,Using Stack Exchange
-purchaser_recommender, What is your involvement in purchasing products or services for the company you work for? (You can choose more than one),I can recommend or request products
-purchaser_influencer, ,"I influence purchasing decisions, but don't have final approval"
-purchaser_purchaser, ,I have a discretionary budget at my disposal
-purchaser_checkwriter, ,I can buy anything I want without asking anyone
-purchaser_none, ,No Involvement
-purchasetype_hardware, What types of purchases are you involved in?,Hardware
-purchasetype_servers, ,Servers
-purchasetype_software, ,Software
-purchasetype_pcs, ,"User Equipment: Monitors, PCs, Laptops"
-purchasetype_consultants, ,Consultants
-purchasetype_recruitment, ,Recruitment Tools & Services
-purchasetype_other, ,Other
-budget, "What is your budget for outside expenditures (hardware, software, consulting, etc) for 2014?",Response
-lang_C, Which of the following languages or technologies have you used significantly in the past year?,C
-lang_C++, ,C++
-lang_C#, ,C#
-lang_Java, ,Java
-lang_JavaScript, ,JavaScript
-lang_Node.js, ,Node.js
-lang_Objective-C, ,Objective-C
-lang_PHP, ,PHP
-lang_Python, ,Python
-lang_Ruby, ,Ruby
-lang_SQL, ,SQL
-lang_Other, ,Other (please specify)
-interest_Node.js, Which technologies are you excited about?,Node.js
-interest_Haskell, ,Haskell
-interest_CoffeeScript, ,CoffeeScript
-interest_Dart, ,Dart
-interest_C++11, ,C++11
-interest_Redis, ,Redis
-interest_MongoDB, ,MongoDB
-interest_F#, ,F#
-interest_Go, ,Go
-interest_Hadoop, ,Hadoop
-interest_AngularJS, ,AngularJS
-interest_Cordova, ,Cordova
-interest_Arduino/RaspberryPi, ,Arduino / Raspberry Pi
-os, Which desktop operating system do you use the most?,Response
-tech_iPhone, Which technology products do you own? (You can choose more than one),iPhone
-tech_Android, ,Android Phone
-tech_WindowsPhone, ,Windows Phone
-tech_iPad, ,iPad
-tech_AndroidTablet, ,Android Tablet
-tech_KindleFire, ,Kindle Fire
-tech_WindowsTablet, ,Windows Tablet
-tech_PS3, ,PS3
-tech_PS4, ,PS4
-tech_Xbox360, ,Xbox 360
-tech_XboxOne, ,Xbox One
-tech_Wii, ,Wii
-tech_WiiU, ,Wii U
-tech_Other, ,Other (please specify)
-job_12months, Have you changed jobs in the last 12 months?,Response
-job_found_how, How did you find out about your current job?,Response
-job_found_how_other, ,Other (please specify)
-job_seek, Are you currently looking for a job or open to new opportunities?,Response
-job_recruiter_contact, How often are you contacted by recruiters?,Response
-jobcontact_Email, How do you prefer to be contacted about job opportunities?,Email
-jobcontact_LinkedIn, ,LinkedIn Inmail
-jobcontact_Phone, ,Phone
-jobcontact_StackOverflow, ,Stack Overflow Careers Message
-jobcontact_Twitter, ,Twitter
-email_personalized, "In receiving an email about a job opportunity, what attributes of the message would make you more likely to respond?",Message is personalized to me
-email_mentionsMe, ,Mentions my code or Stack Overflow activity
-email_salary, ,Includes salary information
-email_team, ,Describes the team I will work on
-email_culture, ,Describes company culture
-email_benefits, ,Describes benefits / perks of the work environment
-email_SOlink, ,"Link to a Stack Overflow Careers Company Page or other source of more information about the company (videos, articles, etc)"
-jobboard_frequency, How often do you visit job boards?,Response
-so_awareness, Have you visited / Are you aware of Stack Overflow Careers 2.0?,Response
-so_careers_profile, Do you have a Stack Overflow Careers 2.0 Profile?,Response
-so_ads_relevant, Please rate the advertising you've seen on Stack Overflow,The ads are relevant
-so_ads_entertaining, ,The ads are entertaining
-so_ads_informative, ,The ads are Informative
-so_ads_clicks, ,I click on ads that interest me
-so_ads_trial, ,I've taken a trial/purchased a product from ads
-so_ads_indicate, ,I like that I can indicate ads I want to see less of
-so_ads_blocker, ,What ads? I use an ad blocker
-so_apptivate_awareness, Were you aware of the Apptivate contest?,Response
-so_appativate_particpate, Did you participate in the Apptivate contest?,Response
-so_reputation, What advertisers do you remember seeing on Stack Overflow?,Open-Ended Response
-so_which_ads, What is your current Stack Overflow reputation?,Response
-so_use_look, How do you use Stack Overflow?,Read other people's questions to solve my problems
-so_use_ask, ,Ask questions to solve problems
-so_use_answer, ,Answer questions I know the answer to
-so_use_job, ,Looking for a job
-so_use_reputation, ,Build my online reputation
-so_use_other, ,Other (please specify)
-so_frequency, How often do you find solutions to your programming problems on Stack Overflow without asking a new question?,Response
+country,What Country do you live in?,Response
+country_other,,Other (please specify)
+state,Which US State or Territory do you live in?,Response
+age,How old are you?,Response
+gender,What is your gender?,Response
+years_coding,How many years of IT/Programming experience do you have?,Response
+dev_type,Which of the following best describes your occupation?,Response
+salary,"Including bonus,what is your annual compensation in USD?",Response
+industry,How would you best describe the industry you currently work in?,Response
+developer_count,How many developers are employed at your company?,Response
+remote,Do you work remotely?,Response
+remote_enjoyment,Do you enjoy working remotely?,Response
+remote_location,Where do you work remotely most of the time?,Response
+mobileapp_iPhone,"If your company has a native mobile app,what platforms do you support?",iPhone
+mobileapp_iPad,,iPad
+mobileapp_Android,,Android Phone
+mobileapp_AndroidTablet,,Android Tablet
+mobileapp_WindowsPhone,,Windows Phone
+mobileapp_Other,,Other
+mobileapp_None,,No mobile app
+timespent_NewFeatures,"In an average week,how do you spend your time at work?",Developing new features
+timespent_Refactoring,,Refactoring / code quality
+timespent_Bugs,,Fixing bugs
+timespent_Support,,Technical support
+timespent_Meetings,,Meetings
+timespent_Learning,,Learning new skills
+timespent_Surfing,,Surfing the Internet
+timespent_NewJob,,Looking for a new job
+timespent_StackExchange,,Using Stack Exchange
+purchaser_recommender,What is your involvement in purchasing products or services for the company you work for? (You can choose more than one),I can recommend or request products
+purchaser_influencer,,"I influence purchasing decisions,but don't have final approval"
+purchaser_purchaser,,I have a discretionary budget at my disposal
+purchaser_checkwriter,,I can buy anything I want without asking anyone
+purchaser_none,,No Involvement
+purchasetype_hardware,What types of purchases are you involved in?,Hardware
+purchasetype_servers,,Servers
+purchasetype_software,,Software
+purchasetype_pcs,,"User Equipment: Monitors,PCs,Laptops"
+purchasetype_consultants,,Consultants
+purchasetype_recruitment,,Recruitment Tools & Services
+purchasetype_other,,Other
+budget,"What is your budget for outside expenditures (hardware,software,consulting,etc) for 2014?",Response
+lang_C,Which of the following languages or technologies have you used significantly in the past year?,C
+lang_C++,,C++
+lang_C#,,C#
+lang_Java,,Java
+lang_JavaScript,,JavaScript
+lang_Node.js,,Node.js
+lang_Objective-C,,Objective-C
+lang_PHP,,PHP
+lang_Python,,Python
+lang_Ruby,,Ruby
+lang_SQL,,SQL
+lang_Other,,Other (please specify)
+interest_Node.js,Which technologies are you excited about?,Node.js
+interest_Haskell,,Haskell
+interest_CoffeeScript,,CoffeeScript
+interest_Dart,,Dart
+interest_C++11,,C++11
+interest_Redis,,Redis
+interest_MongoDB,,MongoDB
+interest_F#,,F#
+interest_Go,,Go
+interest_Hadoop,,Hadoop
+interest_AngularJS,,AngularJS
+interest_Cordova,,Cordova
+interest_Arduino/RaspberryPi,,Arduino / Raspberry Pi
+os,Which desktop operating system do you use the most?,Response
+tech_iPhone,Which technology products do you own? (You can choose more than one),iPhone
+tech_Android,,Android Phone
+tech_WindowsPhone,,Windows Phone
+tech_iPad,,iPad
+tech_AndroidTablet,,Android Tablet
+tech_KindleFire,,Kindle Fire
+tech_WindowsTablet,,Windows Tablet
+tech_PS3,,PS3
+tech_PS4,,PS4
+tech_Xbox360,,Xbox 360
+tech_XboxOne,,Xbox One
+tech_Wii,,Wii
+tech_WiiU,,Wii U
+tech_Other,,Other (please specify)
+job_12months,Have you changed jobs in the last 12 months?,Response
+job_found_how,How did you find out about your current job?,Response
+job_found_how_other,,Other (please specify)
+job_seek,Are you currently looking for a job or open to new opportunities?,Response
+job_recruiter_contact,How often are you contacted by recruiters?,Response
+jobcontact_Email,How do you prefer to be contacted about job opportunities?,Email
+jobcontact_LinkedIn,,LinkedIn Inmail
+jobcontact_Phone,,Phone
+jobcontact_StackOverflow,,Stack Overflow Careers Message
+jobcontact_Twitter,,Twitter
+email_personalized,"In receiving an email about a job opportunity,what attributes of the message would make you more likely to respond?",Message is personalized to me
+email_mentionsMe,,Mentions my code or Stack Overflow activity
+email_salary,,Includes salary information
+email_team,,Describes the team I will work on
+email_culture,,Describes company culture
+email_benefits,,Describes benefits / perks of the work environment
+email_SOlink,,"Link to a Stack Overflow Careers Company Page or other source of more information about the company (videos,articles,etc)"
+jobboard_frequency,How often do you visit job boards?,Response
+so_awareness,Have you visited / Are you aware of Stack Overflow Careers 2.0?,Response
+so_careers_profile,Do you have a Stack Overflow Careers 2.0 Profile?,Response
+so_ads_relevant,Please rate the advertising you've seen on Stack Overflow,The ads are relevant
+so_ads_entertaining,,The ads are entertaining
+so_ads_informative,,The ads are Informative
+so_ads_clicks,,I click on ads that interest me
+so_ads_trial,,I've taken a trial/purchased a product from ads
+so_ads_indicate,,I like that I can indicate ads I want to see less of
+so_ads_blocker,,What ads? I use an ad blocker
+so_apptivate_awareness,Were you aware of the Apptivate contest?,Response
+so_appativate_particpate,Did you participate in the Apptivate contest?,Response
+so_reputation,What advertisers do you remember seeing on Stack Overflow?,Open-Ended Response
+so_which_ads,What is your current Stack Overflow reputation?,Response
+so_use_look,How do you use Stack Overflow?,Read other people's questions to solve my problems
+so_use_ask,,Ask questions to solve problems
+so_use_answer,,Answer questions I know the answer to
+so_use_job,,Looking for a job
+so_use_reputation,,Build my online reputation
+so_use_other,,Other (please specify)
+so_frequency,How often do you find solutions to your programming problems on Stack Overflow without asking a new question?,Response
