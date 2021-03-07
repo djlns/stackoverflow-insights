@@ -9,17 +9,16 @@ survey_folder = join("sources", "surveys")
 schema_folder = join("schemas")
 
 pd.set_option('display.max_columns', None)
-pd.set_option('display.width', 120)
 
 
 def xzsave(obj, filename):
-    """ compressed pickle """
+    """ compressed pickle save """
     with lzma.open(filename, "wb") as f:
         pickle.dump(obj, f)
 
 
 def xzload(filename):
-    """ compressed pickle """
+    """ compressed pickle load """
     with lzma.open(filename, "rb") as f:
         return pickle.loads(f.read())
 
@@ -27,9 +26,9 @@ def xzload(filename):
 def load(year, csvfile, skiprows):
     """
     load and standardise survey columns
-    year : survey year
-    csvfile : csv file
-    skiprows : rows to skip
+    year : (int) survey year
+    csvfile : (string) csv file
+    skiprows : (int) rows to skip
     """
     print(year)
     fin = join(survey_folder, csvfile)
@@ -46,9 +45,12 @@ def load(year, csvfile, skiprows):
     return df
 
 
-def prep_label_standardisation(dfs, cols, split=None):
+def prep_label_standardisation(dfs, cols, split=";"):
     """
-    prep dict for common labeling of a column across datasets
+    prepare dict for manual common labeling across datasets
+    dfs : (list of dataframes) surveys
+    cols : (list of strings) columns of interest
+    split : (string) split multicategory string entries
     """
     print('{')
     for col in cols:
@@ -64,7 +66,7 @@ def prep_label_standardisation(dfs, cols, split=None):
         print(f'    "{col}": {{')
         for u in unique:
             print(f'        "{u}" : ,')
-        print("    }")
+        print("    },")
     print('}')
 
 
