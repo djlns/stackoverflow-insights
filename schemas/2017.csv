@@ -1,0 +1,156 @@
+respondent, Respondent,Respondent ID number
+status, Professional,Which of the following best describes you?
+programhobby, ProgramHobby,Do you program as a hobby or contribute to open source projects?
+country, Country,In which country do you currently live?
+university, University,"Are you currently enrolled in a formal, degree-granting college or university program?"
+employment, EmploymentStatus,Which of the following best describes your current employment status?
+education, FormalEducation,Which of the following best describes the highest level of formal education that you've completed?
+undergrad, MajorUndergrad,Which of the following best describes your main field of study (aka 'major') in college or university/for your undergraduate studies?
+remote, HomeRemote,How often do you work from home or remotely?
+org_size, CompanySize,"In terms of the number of employees, how large is the company or organization you work for?"
+industry, CompanyType,Which of the following best describes the type of company or organization you work for?
+years_coding, YearsProgram,How long has it been since you first learned how to program?
+years_codedprof, YearsCodedJob,For how many years have you coded as part of your job?
+years_codedjobpast, YearsCodedJobPast,For how many years did you code as part of your job?
+dev_type, DeveloperType,Which of the following best describe you?
+occupation_webdevelopertype, WebDeveloperType,Which of the following best describes you as a Web developer?
+occupation_mobiledevelopertype, MobileDeveloperType,For which of the following platforms do you develop mobile applications?
+occupation_nondevelopertype, NonDeveloperType,Which of the following describe you?
+career_satisfaction, CareerSatisfaction,Career satisfaction rating
+satisfaction, JobSatisfaction,Job satisfaction rating
+excoderreturn, ExCoderReturn,"You said before that you used to code as part of your job, but no longer do. To what extent do you agree or disagree with the following statements? If money weren't an issue, I would take a coding job again"
+excodernotforme, ExCoderNotForMe,"You said before that you used to code as part of your job, but no longer do. To what extent do you agree or disagree with the following statements? Working as a developer just wasn't for me"
+excoderbalance, ExCoderBalance,"You said before that you used to code as part of your job, but no longer do. To what extent do you agree or disagree with the following statements? I have better work-life balance now than I did as a developer"
+excoder10years, ExCoder10Years,"You said before that you used to code as part of your job, but no longer do. To what extent do you agree or disagree with the following statements? My career is going the way I thought it would 10 years ago"
+excoderbelonged, ExCoderBelonged,"You said before that you used to code as part of your job, but no longer do. To what extent do you agree or disagree with the following statements? When I was a developer, I didn't feel like I belonged with my colleagues"
+excoderskills, ExCoderSkills,"You said before that you used to code as part of your job, but no longer do. To what extent do you agree or disagree with the following statements? I don't think my coding skills are up to date"
+excoderwillnotcode, ExCoderWillNotCode,"You said before that you used to code as part of your job, but no longer do. To what extent do you agree or disagree with the following statements? I probably won't code for a living ever again"
+excoderactive, ExCoderActive,"You said before that you used to code as part of your job, but no longer do. To what extent do you agree or disagree with the following statements? I'm still active in the developer community"
+pronounce_gif, PronounceGIF,"How do you pronounce ""GIF""?"
+problemsolving, ProblemSolving,I love solving problems
+buildingthings, BuildingThings,Building things is very rewarding
+learningnewtech, LearningNewTech,Learning new technologies is fun
+boringdetails, BoringDetails,I tend to get bored by implementation details
+jobsecurity, JobSecurity,Job security is important to me
+diversityimportant, DiversityImportant,Diversity in the workplace is important
+annoyingui, AnnoyingUI,It annoys me when software has a poor UI
+friendsdevelopers, FriendsDevelopers,"Most of my friends are developers, engineers, or scientists"
+rightwrongway, RightWrongWay,There's a right and a wrong way to do everything
+understandcomputers, UnderstandComputers,"Honestly, there's a lot about computers that I just don't understand"
+seriouswork, SeriousWork,I take my work very seriously
+investtimetools, InvestTimeTools,I invest a lot of time into the tools I use
+workpaycare, WorkPayCare,"I don't really care what I work on, so long as I'm paid well"
+kinshipdevelopers, KinshipDevelopers,I feel a sense of kinship to other developers
+challengemyself, ChallengeMyself,I like to challenge myself
+competepeers, CompetePeers,I think of myself as competing with my peers
+changeworld, ChangeWorld,I want to change the world
+job_seek, JobSeekingStatus,Which of the following best describes your current job-seeking status?
+hours_perweek, HoursPerWeek,"During a typical week, approximately how many hours do you spend on activities related to finding new job opportunities?Please adjust the slider to the appropriate number of hours. The box to the right will indicate the number of hours you have chosen."
+lastnewjob, LastNewJob,When was the last time that you took a job with a new employer?
+assessjobindustry, AssessJobIndustry,"When you're assessing potential jobs to apply to, how important are each of the following to you? The industry that I'd be working in"
+assessjobrole, AssessJobRole,"When you're assessing potential jobs to apply to, how important are each of the following to you? The specific role or job title I'd be applying for"
+assessjobexp, AssessJobExp,"When you're assessing potential jobs to apply to, how important are each of the following to you? The experience level called for in the job description"
+assessjobdept, AssessJobDept,"When you're assessing potential jobs to apply to, how important are each of the following to you? The specific department or team I'd be working on"
+assessjobtech, AssessJobTech,"When you're assessing potential jobs to apply to, how important are each of the following to you? The languages, frameworks, and other technologies I'd be working with"
+assessjobprojects, AssessJobProjects,"When you're assessing potential jobs to apply to, how important are each of the following to you? How projects are managed at the company or organization"
+assessjobcompensation, AssessJobCompensation,"When you're assessing potential jobs to apply to, how important are each of the following to you? The compensation and benefits offered"
+assessjoboffice, AssessJobOffice,"When you're assessing potential jobs to apply to, how important are each of the following to you? The office environment I'd be working in"
+assessjobcommute, AssessJobCommute,"When you're assessing potential jobs to apply to, how important are each of the following to you? The amount of time I'd have to spend commuting"
+assessjobremote, AssessJobRemote,"When you're assessing potential jobs to apply to, how important are each of the following to you? The opportunity to work from home/remotely"
+assessjobleaders, AssessJobLeaders,"When you're assessing potential jobs to apply to, how important are each of the following to you? The reputations of the company's senior leaders"
+assessjobprofdevel, AssessJobProfDevel,"When you're assessing potential jobs to apply to, how important are each of the following to you? Opportunities for professional development"
+assessjobdiversity, AssessJobDiversity,"When you're assessing potential jobs to apply to, how important are each of the following to you? The diversity of the company or organization"
+assessjobproduct, AssessJobProduct,"When you're assessing potential jobs to apply to, how important are each of the following to you? How widely used or impactful the product or service I'd be working on is"
+assessjobfinances, AssessJobFinances,"When you're assessing potential jobs to apply to, how important are each of the following to you? The financial performance or funding status of the company or organization"
+importantbenefits, ImportantBenefits,"When it comes to compensation and benefits, other than base salary, which of the following are most important to you?"
+clickykeys, ClickyKeys,"If two developers are sharing an office, is it OK for one of them to get a mechanical keyboard with loud ""clicky"" keys?"
+jobprofile, JobProfile,"On which of the following sites do you maintain a profile, CV, or resumé?"
+resumeprompted, ResumePrompted,"Think back to the last time you updated your resumé, CV, or an online profile on a job site. What prompted you to do so?"
+learnedhiring, LearnedHiring,Think back to when you first applied to work for your current employer. Which of the following best describes how you learned that they were hiring for that particular job?
+importanthiringalgorithms, ImportantHiringAlgorithms,"Congratulations! You've just been put in charge of technical recruiting at Globex, a multinational high- tech firm. This job comes with a corner office, and you have an experienced staff of recruiters at your disposal. They want to know what they should prioritize when recruiting software developers. How important should each of the following be in Globex's hiring process? Knowledge of algorithms and data structures"
+importanthiringtechexp, ImportantHiringTechExp,"Congratulations! You've just been put in charge of technical recruiting at Globex, a multinational high- tech firm. This job comes with a corner office, and you have an experienced staff of recruiters at your disposal. They want to know what they should prioritize when recruiting software developers. How important should each of the following be in Globex's hiring process? Experience with specific tools (libraries, frameworks, etc.) used by the employer"
+importanthiringcommunication, ImportantHiringCommunication,"Congratulations! You've just been put in charge of technical recruiting at Globex, a multinational high- tech firm. This job comes with a corner office, and you have an experienced staff of recruiters at your disposal. They want to know what they should prioritize when recruiting software developers. How important should each of the following be in Globex's hiring process? Communication skills"
+importanthiringopensource, ImportantHiringOpenSource,"Congratulations! You've just been put in charge of technical recruiting at Globex, a multinational high- tech firm. This job comes with a corner office, and you have an experienced staff of recruiters at your disposal. They want to know what they should prioritize when recruiting software developers. How important should each of the following be in Globex's hiring process? Contributions to open source projects"
+importanthiringpmexp, ImportantHiringPMExp,"Congratulations! You've just been put in charge of technical recruiting at Globex, a multinational high- tech firm. This job comes with a corner office, and you have an experienced staff of recruiters at your disposal. They want to know what they should prioritize when recruiting software developers. How important should each of the following be in Globex's hiring process? Experience with specific project management tools & techniques"
+importanthiringcompanies, ImportantHiringCompanies,"Congratulations! You've just been put in charge of technical recruiting at Globex, a multinational high- tech firm. This job comes with a corner office, and you have an experienced staff of recruiters at your disposal. They want to know what they should prioritize when recruiting software developers. How important should each of the following be in Globex's hiring process? Previous companies worked at"
+importanthiringtitles, ImportantHiringTitles,"Congratulations! You've just been put in charge of technical recruiting at Globex, a multinational high- tech firm. This job comes with a corner office, and you have an experienced staff of recruiters at your disposal. They want to know what they should prioritize when recruiting software developers. How important should each of the following be in Globex's hiring process? Previous job titles held"
+importanthiringeducation, ImportantHiringEducation,"Congratulations! You've just been put in charge of technical recruiting at Globex, a multinational high- tech firm. This job comes with a corner office, and you have an experienced staff of recruiters at your disposal. They want to know what they should prioritize when recruiting software developers. How important should each of the following be in Globex's hiring process? Educational credentials (e.g. schools attended, specific field of study, grades earned)"
+importanthiringrep, ImportantHiringRep,"Congratulations! You've just been put in charge of technical recruiting at Globex, a multinational high- tech firm. This job comes with a corner office, and you have an experienced staff of recruiters at your disposal. They want to know what they should prioritize when recruiting software developers. How important should each of the following be in Globex's hiring process? Stack Overflow reputation"
+importanthiringgettingthingsdone, ImportantHiringGettingThingsDone,"Congratulations! You've just been put in charge of technical recruiting at Globex, a multinational high- tech firm. This job comes with a corner office, and you have an experienced staff of recruiters at your disposal. They want to know what they should prioritize when recruiting software developers. How important should each of the following be in Globex's hiring process? Track record of getting things done"
+currency, Currency,"Which currency do you use day-to-day? If you're a globe-trotting digital nomad and the answer is “it's complicated,” please pick the one you're most comfortable estimating in."
+overpaid, Overpaid,"Compared to your estimate of your own market value, do you think you are…?"
+tabs_spaces, TabsSpaces,Tabs or spaces?
+education_important, EducationImportant,"Overall, how important has your formal schooling and education been to your career success?"
+education_types, EducationTypes,"Outside of your formal schooling and education, which of the following have you done?"
+selftaughttypes, SelfTaughtTypes,"You indicated that you had taught yourself a programming technology without taking a course. What resources did you use to do that? If you've done it more than once, please think about the most recent time you've done so."
+timeafterbootcamp, TimeAfterBootcamp,You indicated previously that you went through a developer “bootcamp.” How long did it take you to get a full-time job as a developer after graduating?
+let_cousin, CousinEducation,"Let's pretend you have a distant cousin. They are 24 years old, have a college degree in a field not related to computer programming, and have been working a non-coding job for the last two years. They want your advice on how to switch to a career as a software developer. Which of the following options would you most strongly recommend to your cousin?
+let_male, Let's pretend you have a distant cousin named Robert. He is 24 years old, has a college degree in a field not related to computer programming, and has been working a non-coding job for the last two years. He wants your advice on how to switch to a career as a software developer. Which of the following options would you most strongly recommend to Robert?
+let_female, Let's pretend you have a distant cousin named Alice. She is 24 years old, has a college degree in a field not related to computer programming, and has been working a non-coding job for the last two years. She wants your advice on how to switch to a career as a software developer. Which of the following options would you most strongly recommend to Alice?"
+workstart, WorkStart,Suppose you could choose your own working hours for an 8-hour day. What time would you start work for the day? Please adjust the slider to the hour nearest your ideal start time. The box next to the slider will display your selection using a 24-hour clock
+haveworkedlanguage, HaveWorkedLanguage,"Which of the following languages have you done extensive development work in over the past year, and which do you want to work in over the next year?"
+wantworklanguage, WantWorkLanguage,"Which of the following languages have you done extensive development work in over the past year, and which do you want to work in over the next year?"
+haveworkedframework, HaveWorkedFramework,"Which of the following libraries, frameworks, and tools have you done extensive development work in over the past year, and which do you want to work in over the next year?"
+wantworkframework, WantWorkFramework,"Which of the following libraries, frameworks, and tools have you done extensive development work in over the past year, and which do you want to work in over the next year?"
+haveworkeddatabase, HaveWorkedDatabase,"Which of the following database technologies have you done extensive development work in over the past year, and which do you want to work in over the next year?"
+wantworkdatabase, WantWorkDatabase,"Which of the following database technologies have you done extensive development work in over the past year, and which do you want to work in over the next year?"
+haveworkedplatform, HaveWorkedPlatform,"Which of the following platforms have you done extensive development work for over the past year, and which do you want to work on over the next year?"
+wantworkplatform, WantWorkPlatform,"Which of the following platforms have you done extensive development work for over the past year, and which do you want to work on over the next year?"
+ide, IDE,Which development environment(s) do you use regularly?
+auditoryenvironment, AuditoryEnvironment,"Suppose you're about to start a few hours of coding and have complete control over your auditory environment (music, background noise, etc.). What would you do?"
+methodology, Methodology,Which of the following methodologies do you have experience working in?
+version_control, VersionControl,"What version control system do you use? If you use several, please choose the one you use most often."
+checkincode, CheckInCode,"Over the last year, how often have you checked-in or committed code?"
+shipit, ShipIt,It's better to ship now and optimize later
+otherpeoplescode, OtherPeoplesCode,Maintaining other people's code is a form of torture
+projectmanagement, ProjectManagement,Most project management techniques are useless
+enjoydebugging, EnjoyDebugging,I enjoy debugging code
+inthezone, InTheZone,I often get “into the zone” when I'm coding
+difficultcommunication, DifficultCommunication,I have difficulty communicating my ideas to my peers
+collaborateremote, CollaborateRemote,It's harder to collaborate with remote peers than those on site
+metricassess, MetricAssess,"Congratulations! The bosses at your new employer, E Corp, are allowing you to choose which metrics will be used to assess your individual performance in your role as a senior developer. Which metrics do you suggest to the E bosses?"
+equipmentsatisfiedmonitors, EquipmentSatisfiedMonitors,"Thinking about your main coding workstation, how satisfied are you with each of the following? Monitors/screens (number of, size, resolution)"
+equipmentsatisfiedcpu, EquipmentSatisfiedCPU,"Thinking about your main coding workstation, how satisfied are you with each of the following? Processing power (CPU and/or GPU)"
+equipmentsatisfiedram, EquipmentSatisfiedRAM,"Thinking about your main coding workstation, how satisfied are you with each of the following? Amount of RAM"
+equipmentsatisfiedstorage, EquipmentSatisfiedStorage,"Thinking about your main coding workstation, how satisfied are you with each of the following? Storage capacity"
+equipmentsatisfiedrw, EquipmentSatisfiedRW,"Thinking about your main coding workstation, how satisfied are you with each of the following? Storage read/write speed"
+purchaser_internet, InfluenceInternet,How much influence do you have on purchasing decisions within your organization for each of the following? Internet bandwidth
+purchaser_workstation, InfluenceWorkstation,How much influence do you have on purchasing decisions within your organization for each of the following? Your personal workstation hardware
+purchaser_hardware, InfluenceHardware,How much influence do you have on purchasing decisions within your organization for each of the following? Personal workstation hardware for others in the company
+purchaser_servers, InfluenceServers,How much influence do you have on purchasing decisions within your organization for each of the following? Servers
+purchaser_techstack, InfluenceTechStack,How much influence do you have on purchasing decisions within your organization for each of the following? Main technical stack of the company
+purchaser_depttech, InfluenceDeptTech,How much influence do you have on purchasing decisions within your organization for each of the following? Technical stack used in your department
+purchaser_viztools, InfluenceVizTools,"How much influence do you have on purchasing decisions within your organization for each of the following? Data analysis and visualization tools (e.g. Tableau, Looker)"
+purchaser_database, InfluenceDatabase,How much influence do you have on purchasing decisions within your organization for each of the following? Database systems or solutions
+purchaser_cloud, InfluenceCloud,How much influence do you have on purchasing decisions within your organization for each of the following? Cloud or serverless back-end solutions
+purchaser_consultants, InfluenceConsultants,How much influence do you have on purchasing decisions within your organization for each of the following? Consultants
+purchaser_recruitment, InfluenceRecruitment,How much influence do you have on purchasing decisions within your organization for each of the following? Recruitment tools & platforms
+purchaser_communication, InfluenceCommunication,How much influence do you have on purchasing decisions within your organization for each of the following? Communication & collaboration tools
+stackoverflowdescribes, StackOverflowDescribes,Which of the following best describes you?
+stackoverflowsatisfaction, StackOverflowSatisfaction,Stack Overflow satisfaction
+stackoverflowdevices, StackOverflowDevices,Which of the following devices have you used to connect to Stack Overflow over the last three months?
+stackoverflowfoundanswer, StackOverflowFoundAnswer,"Over the last three months, approximately how often have you done each of the following on Stack Overflow? Found an answer that solved my coding problem"
+stackoverflowcopiedcode, StackOverflowCopiedCode,"Over the last three months, approximately how often have you done each of the following on Stack Overflow? Copied a code example and pasted it into my codebase"
+stackoverflowjoblisting, StackOverflowJobListing,"Over the last three months, approximately how often have you done each of the following on Stack Overflow? Seen a job listing I was interested in"
+stackoverflowcompanypage, StackOverflowCompanyPage,"Over the last three months, approximately how often have you done each of the following on Stack Overflow? Researched a potential employer by visiting its company page"
+stackoverflowjobsearch, StackOverflowJobSearch,"Over the last three months, approximately how often have you done each of the following on Stack Overflow? Searched for jobs"
+stackoverflownewquestion, StackOverflowNewQuestion,"Over the last three months, approximately how often have you done each of the following on Stack Overflow? Asked a new question"
+stackoverflowanswer, StackOverflowAnswer,"Over the last three months, approximately how often have you done each of the following on Stack Overflow? Written a new answer to someone else's question"
+stackoverflowmetachat, StackOverflowMetaChat,"Over the last three months, approximately how often have you done each of the following on Stack Overflow? Participated in community discussions on meta or in chat"
+stackoverflowadsrelevant, StackOverflowAdsRelevant,The ads on Stack Overflow are relevant to me
+stackoverflowadsdistracting, StackOverflowAdsDistracting,The ads on Stack Overflow are distracting
+stackoverflowmoderation, StackOverflowModeration,The moderation on Stack Overflow is unfair
+stackoverflowcommunity, StackOverflowCommunity,I feel like a member of the Stack Overflow community
+stackoverflowhelpful, StackOverflowHelpful,The answers and code examples I get on Stack Overflow are helpful
+stackoverflowbetter, StackOverflowBetter,Stack Overflow makes the Internet a better place
+stackoverflowwhatdo, StackOverflowWhatDo,I don't know what I'd do without Stack Overflow
+stackoverflowmakemoney, StackOverflowMakeMoney,The people who run Stack Overflow are just in it for the money
+gender, Gender,Which of the following do you currently identify as?
+highesteducationparents, HighestEducationParents,What is the highest level of education received by either of your parents?
+race, Race,Which of the following do you identify as?
+surveylong, SurveyLong,This survey was too long
+questionsinteresting, QuestionsInteresting,The questions were interesting
+questionsconfusing, QuestionsConfusing,The questions were confusing
+interestedanswers, InterestedAnswers,I'm interested in learning how other developers answered
+salary, Salary,"What is your current annual base salary, before taxes, and excluding bonuses, grants, or other compensation?"
+expected_salary, ExpectedSalary,"You said before that you are currently learning how to program. When you have completed your studies, what annual salary do you expect to earn in your first job after graduation?"

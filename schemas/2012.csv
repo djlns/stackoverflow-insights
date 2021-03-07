@@ -1,0 +1,75 @@
+country, What Country or Region do you live in?,Response
+state, Which US State or Territory do you live in?,Response
+age, How old are you?,Response
+years_coding, How many years of IT/Programming experience do you have?,Response
+industry, How would you best describe the industry you currently work in?,Response
+org_size, Which best describes the size of your company?,Response
+dev_type, Which of the following best describes your occupation?,Response
+purchaser_influencer, What is your involvement in purchasing products or services for the company you work for? (You can choose more than one),Influencer
+purchaser_recommender, ,Recommender
+purchaser_approver, ,Approver
+purchaser_purchaser, ,Purchaser
+purchaser_checkwriter, ,Check Writer
+purchaser_none, ,No Involvement
+purchaser_seller, ,I'm a Seller
+purchasetype_hardware, What types of purchases are you involved in?,Hardware
+purchasetype_servers, ,Servers
+purchasetype_software, ,Software
+purchasetype_pcs, ,"User Equipment: Monitors, PCs, Laptops"
+purchasetype_consultants, ,Consultants
+purchasetype_other, ,Other
+budget, "What is your budget for outside expenditures (hardware, software, consulting, etc) for 2011?",Response
+project_type, What type of project are you developing?,Response
+lang_Java, Which languages are you proficient in?,Java
+lang_JavaScript, ,JavaScript
+lang_CSS, ,CSS
+lang_PHP, ,PHP
+lang_Python, ,Python
+lang_ObjectiveC, ,Objective-C
+lang_Ruby, ,Ruby
+lang_SQL, ,SQL
+lang_C#, ,C#
+lang_C++, ,C++
+lang_C, ,C
+lang_Perl, ,Perl
+lang_HTML5, ,HTML5
+lang_None, ,None
+lang_Other, ,Other (please specify)
+os, Which desktop operating system do you use the most?,Response
+satisfaction, What best describes your career / job satisfaction? ,Response
+salary, "Including bonus, what is your annual compensation in USD?",Response
+so_awareness, Have you visited / Are you aware of Stack Overflow Careers?,Response
+so_profile, Do you have a Stack Overflow Careers Profile?,Response
+so_profile_none_why, "You answered you don't have a Careers profile, can you elaborate why?",Response
+so_profile_none_other, ,Other (please specify)
+tech_iPhone, Which technology products do you own? (You can choose more than one),iPhone
+tech_Android, ,Android
+tech_Blackberry, ,Blackberry
+tech_WindowsPhone, ,Windows Phone
+tech_OtherSmartPhone, ,Other Smart Phone
+tech_RegularMobilePhone, ,Regular Mobile Phone
+tech_Kindle, ,Kindle
+tech_Nook, ,Nook
+tech_AppleTV, ,AppleTV
+tech_Boxee, ,Boxee
+tech_OtherStreaming, ,Other media streaming device
+tech_Netbook, ,Netbook
+tech_PS3, ,PS3
+tech_Xbox, ,Xbox
+tech_Wii, ,Wii
+tech_OtherGaming, ,Other gaming system
+tech_KindleFire, ,Kindle Fire
+tech_iPad, ,iPad
+tech_Tablet, ,Other tablet
+tech_Other, ,Other (please specify)
+spent_on_tech, "In the last 12 months, how much money have you spent on personal technology-related purchases? ",Response
+so_ads_relevant, Please rate the advertising you've seen on Stack Overflow,The ads are relevant
+so_ads_entertaining, ,The ads are entertaining
+so_ads_informative, ,The ads are Informative
+so_ads_clicks, ,I click on ads that interest me
+so_ads_trial, ,I've taken a trial/purchased a product from ads
+so_ads_blocker, ,What ads? I use an ad blocker
+so_which_ads, What advertisers do you remember seeing on Stack Overflow?,Open-Ended Response
+so_reputation, What is your current Stack Overflow reputation?,Response
+so_site, Which of our sites do you frequent most?,Response
+so_site_other, ,Other Stack Exchange (please specify)

@@ -1,0 +1,222 @@
+country, Country
+age, Age
+gender, Gender
+tabs_spaces, Tabs or Spaces
+years_coding, Years IT / Programming Experience
+dev_type, Occupation
+os, Desktop Operating System
+os_other, Desktop Operating System: write-in
+lang_Android, Current Lang & Tech: Android
+lang_Arduino/RaspberryPi, Current Lang & Tech: Arduino
+lang_AngularJS, Current Lang & Tech: AngularJS
+lang_C, Current Lang & Tech: C
+lang_C++, Current Lang & Tech: C++
+lang_C++11, Current Lang & Tech: C++11
+lang_C#, Current Lang & Tech: C#
+lang_Cassandra, Current Lang & Tech: Cassandra
+lang_CoffeeScript, Current Lang & Tech: CoffeeScript
+lang_Cordova, Current Lang & Tech: Cordova
+lang_Clojure, Current Lang & Tech: Clojure
+lang_Cloud, Current Lang & Tech: Cloud
+lang_Dart, Current Lang & Tech: Dart
+lang_F#, Current Lang & Tech: F#
+lang_Go, Current Lang & Tech: Go
+lang_Hadoop, Current Lang & Tech: Hadoop
+lang_Haskell, Current Lang & Tech: Haskell
+lang_iOS, Current Lang & Tech: iOS
+lang_Java, Current Lang & Tech: Java
+lang_JavaScript, Current Lang & Tech: JavaScript
+lang_LAMP, Current Lang & Tech: LAMP
+lang_Matlab, Current Lang & Tech: Matlab
+lang_MongoDB, Current Lang & Tech: MongoDB
+lang_Node.js, Current Lang & Tech: Node.js
+lang_Objective-C, Current Lang & Tech: Objective-C
+lang_Perl, Current Lang & Tech: Perl
+lang_PHP, Current Lang & Tech: PHP
+lang_Python, Current Lang & Tech: Python
+lang_R, Current Lang & Tech: R
+lang_Redis, Current Lang & Tech: Redis
+lang_Ruby, Current Lang & Tech: Ruby
+lang_Rust, Current Lang & Tech: Rust
+lang_Salesforce, Current Lang & Tech: Salesforce
+lang_Scala, Current Lang & Tech: Scala
+lang_Sharepoint, Current Lang & Tech: Sharepoint
+lang_Spark, Current Lang & Tech: Spark
+lang_SQL, Current Lang & Tech: SQL
+lang_SQL Server, Current Lang & Tech: SQL Server
+lang_Swift, Current Lang & Tech: Swift
+lang_VisualBasic, Current Lang & Tech: Visual Basic
+lang_WindowsPhone, Current Lang & Tech: Windows Phone
+lang_Wordpress, Current Lang & Tech: Wordpress
+lang_Other, Current Lang & Tech: Write-In
+interest_Android, Future Lang & Tech: Android
+interest_Arduino/RaspberryPi, Future Lang & Tech: Arduino
+interest_AngularJS, Future Lang & Tech: AngularJS
+interest_C, Future Lang & Tech: C
+interest_C++, Future Lang & Tech: C++
+interest_C++11, Future Lang & Tech: C++11
+interest_C#, Future Lang & Tech: C#
+interest_Cassandra, Future Lang & Tech: Cassandra
+interest_CoffeeScript, Future Lang & Tech: CoffeeScript
+interest_Cordova, Future Lang & Tech: Cordova
+interest_Clojure, Future Lang & Tech: Clojure
+interest_Cloud, Future Lang & Tech: Cloud
+interest_Dart, Future Lang & Tech: Dart
+interest_F#, Future Lang & Tech: F#
+interest_Go, Future Lang & Tech: Go
+interest_Hadoop, Future Lang & Tech: Hadoop
+interest_Haskell, Future Lang & Tech: Haskell
+interest_iOS, Future Lang & Tech: iOS
+interest_Java, Future Lang & Tech: Java
+interest_JavaScript, Future Lang & Tech: JavaScript
+interest_LAMP, Future Lang & Tech: LAMP
+interest_Matlab, Future Lang & Tech: Matlab
+interest_MongoDB, Future Lang & Tech: MongoDB
+interest_Node.js, Future Lang & Tech: Node.js
+interest_Objective-C, Future Lang & Tech: Objective-C
+interest_Perl, Future Lang & Tech: Perl
+interest_PHP, Future Lang & Tech: PHP
+interest_Python, Future Lang & Tech: Python
+interest_R, Future Lang & Tech: R
+interest_Redis, Future Lang & Tech: Redis
+interest_Ruby, Future Lang & Tech: Ruby
+interest_Rust, Future Lang & Tech: Rust
+interest_Salesforce, Future Lang & Tech: Salesforce
+interest_Scala, Future Lang & Tech: Scala
+interest_Sharepoint, Future Lang & Tech: Sharepoint
+interest_Spark, Future Lang & Tech: Spark
+interest_SQL, Future Lang & Tech: SQL
+interest_SQL Server, Future Lang & Tech: SQL Server
+interest_Swift, Future Lang & Tech: Swift
+interest_VisualBasic, Future Lang & Tech: Visual Basic
+interest_WindowsPhone, Future Lang & Tech: Windows Phone
+interest_Wordpress, Future Lang & Tech: Wordpress
+interest_Other, Future Lang & Tech: Write-In
+education_NoFormal, Training & Education: No formal training
+education_OnTheJob, Training & Education: On the job
+education_Bootcamp, Training & Education: Boot camp or night school
+education_Online, Training & Education: Online Class
+education_Mentorship, Training & Education: Mentorship
+education_IndustryCert, Training & Education: Industry certification
+education_SomeCollege, "Training & Education: Some college, but no CS degree"
+education_BSinCS, Training & Education: BS in CS
+education_MastersinCS, Training & Education: Masters in CS
+education_PhDinCS, Training & Education: PhD in CS
+education_Other, Training & Education: Other
+salary, Compensation
+salary_midpoint, Compensation: midpoint
+employment, Employment Status
+industry, Industry
+satisfaction, Job Satisfaction
+purchaser, Purchasing Power
+remote, Remote Status
+job_12months, Changed Jobs in last 12 Months
+job_seek, Open to new job opportunities
+job_factors_Salary, Most important aspect of new job opportunity: Salary
+job_factors_Equity, Most important aspect of new job opportunity: Equity
+job_factors_Decisions, Most important aspect of new job opportunity: Important decisions
+job_factors_Insurance, Most important aspect of new job opportunity: Health insurance
+job_factors_Industry, Most important aspect of new job opportunity: Industry
+job_factors_TechStack, Most important aspect of new job opportunity: Tech stack
+job_factors_Size, Most important aspect of new job opportunity: Company size
+job_factors_Stage, Most important aspect of new job opportunity: Company stage
+job_factors_WorkLifeBalance, Most important aspect of new job opportunity: Work - Life balance
+job_factors_Advancement, Most important aspect of new job opportunity: Advancement
+job_factors_Title, Most important aspect of new job opportunity: Job title
+job_factors_Location, Most important aspect of new job opportunity: Office location
+job_factors_Colleagues, Most important aspect of new job opportunity: Quality of colleagues
+job_factors_Culture, Most important aspect of new job opportunity: Company culture
+job_factors_Reputation, Most important aspect of new job opportunity: Company reputation
+job_factors_TaskImportance, Most important aspect of new job opportunity: Building something that matters
+job_factors_Remote, Most important aspect of new job opportunity: Remote working
+job_factors_Flexible, Most important aspect of new job opportunity: Flexible work options
+job_remote_op, How important is remote when evaluating new job opportunity?
+job_search_annoy_Time, Most annoying about job search: Finding time
+job_search_annoy_Qualified, Most annoying about job search: Finding job I'm qualified for
+job_search_annoy_Tnteresting, Most annoying about job search: Finding interesting job
+job_search_annoy_RarelyRespond, Most annoying about job search: Interesting companies rarely respond
+job_search_annoy_CV, Most annoying about job search: Writing and updating CV
+job_search_annoy_TimeForInterview, Most annoying about job search: Taking time off work to interview
+job_search_annoy_Interview, Most annoying about job search: The Interview
+job_recruiter_contact, How often contacted by recruiters
+perception_recruiter, Perception of recruiter contact
+perception_Email, Perception of contact form: Email
+perception_LinkedIn, Perception of contact form: LinkedIn
+perception_Xing, Perception of contact form: Xing
+perception_Phone, Perception of contact form: Phone
+perception_SOcareers, Perception of contact form: Stack Overflow Careers
+perception_Twitter, Perception of contact form: Twitter
+perception_Facebook, Perception of contact form: Facebook
+email_personalized, Appealing message traits: Message is personalized
+email_projects, Appealing message traits: Code or projects mentioned
+email_activity, Appealing message traits: Stack Overflow activity mentioned
+email_team, Appealing message traits: Team described
+email_culture, Appealing message traits: Company culture described
+email_salary, Appealing message traits: Salary information
+email_benefits, Appealing message traits: Benefits & Perks
+email_SOlink, Appealing message traits: Stack Overflow Company Page
+urgent_Salary, Most urgent info about job opportunity: Salary
+urgent_Benefits, Most urgent info about job opportunity: Benefits
+urgent_Company, Most urgent info about job opportunity: Company name
+urgent_TechStack, Most urgent info about job opportunity: Tech stack
+urgent_Location, Most urgent info about job opportunity: Office location
+urgent_Title, Most urgent info about job opportunity: Job title
+urgent_Colleagues, Most urgent info about job opportunity: Colleagues
+urgent_ProductDetails, Most urgent info about job opportunity: Product details
+contact_Headhunter, Who do you want to communicate with about a new job opportunity: Headhunter
+contact_InHouseRecruiter, Who do you want to communicate with about a new job opportunity: In-house recruiter
+contact_InHouseTech, Who do you want to communicate with about a new job opportunity: In-house tech recruiter
+contact_Manager, Who do you want to communicate with about a new job opportunity: Manager
+contact_Developer, Who do you want to communicate with about a new job opportunity: Developer
+interview_improvement_MoreLiveCode, How can companies improve interview process: More live code
+interview_improvement_FlexibleSchedule, How can companies improve interview process: Flexible interview schedule
+interview_improvement_RemoteTnterviews, How can companies improve interview process: Remote interviews
+interview_improvement_IntroduceBoss, How can companies improve interview process: Introduce me to boss
+interview_improvement_IntroduceTeam, How can companies improve interview process: Introduce me to team
+interview_improvement_Coffee, How can companies improve interview process: Gimme coffee
+interview_improvement_Workplace, How can companies improve interview process: Show me workplace
+interview_improvement_FewerBrainteasers, How can companies improve interview process: Fewer brainteasers
+interview_improvement_BetterPreparation, How can companies improve interview process: Better preparation
+so_careers_NoSpam, Why try Stack Overflow Careers: No spam
+so_careers_ForProgrammers, Why try Stack Overflow Careers: Jobs site for programmers
+so_careers_RevelantJobs, Why try Stack Overflow Careers: Selection of revelant jobs
+so_careers_ShowcaseActivity, Why try Stack Overflow Careers: Showcase Stack Overflow activity
+so_careers_Jobs, Why try Stack Overflow Careers: Jobs are on Stack Overflow
+so_careers_Other, Why try Stack Overflow Careers: Other
+caffinated_per_day, How many caffeinated beverages per day?
+hobby_programming_hours, How many hours programming as hobby per week?
+so_frequency, How frequently land on or read Stack Overflow
+text_editor, Preferred text editor
+text_editor_other, Preferred text editor: write-in
+color_theme, Prefered IDE theme
+source_control_Git, Source control used: Git
+source_control_Mercurial, Source control used: Mercurial
+source_control_SVN, Source control used: SVN
+source_control_CVS, Source control used: CVS
+source_control_Perforce, Source control used: Perforce
+source_control_TFS, Source control used: TFS
+source_control_DCVS, Source control used: DCVS
+source_control_Bitkeeper, Source control used: Bitkeeper
+source_control_Legacy, Source control used: Legacy / Custom
+source_control_None, Source control used: I don't use source control
+source_control_Other, Source control used: write-in
+prefered_source_control, Prefered Source Control
+prefered_source_control_other, Prefered Source Control: write-in
+so_use_forjob, Why use Stack Overflow: Help for job
+so_use_tohelp, Why use Stack Overflow: To give help
+so_use_vital, Why use Stack Overflow: Can't do job without it
+so_use_presence, Why use Stack Overflow: Maintain online presence
+so_use_demonstrate, Why use Stack Overflow: Demonstrate expertise
+so_use_communication, Why use Stack Overflow: Communicate with others
+so_use_personal, Why use Stack Overflow: Receive help on personal projects
+so_use_tolearn, Why use Stack Overflow: Love to learn
+so_use_none, Why use Stack Overflow: I don't use Stack Overflow
+so_helpful_frequency, How often are Stack Overflow's answers helpful
+why_use_HelpOthers, Why answer: Help a programmer in need
+why_use_HelpFuture, Why answer: Help future programmers
+why_use_demonstrate, Why answer: Demonstrate expertise
+why_use_selfpromotion, Why answer: Self promotion
+why_use_senseofresponsibility, Why answer: Sense of responsibility to developers
+why_use_noidea, Why answer: No idea
+why_use_dontwantto, Why answer: I don't answer and I don't want to
+why_use_wantto, Why answer: I don't answer but I want to
