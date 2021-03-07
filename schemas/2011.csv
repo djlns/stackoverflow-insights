@@ -39,8 +39,8 @@ lang_C#,,C#
 lang_C++,,C++
 lang_C,,C
 lang_Perl,,Perl
-lang_none,,None
-lang_other,,other (please specify)
+lang_None,,None
+lang_Other,,other (please specify)
 os,What operating system do you use the most?,Response
 satisfaction,Please rate your job/career satisfaction,Response
 salary,"Including bonus what is your annual compensation in USD?",Response

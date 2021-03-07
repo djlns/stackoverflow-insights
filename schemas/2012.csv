@@ -32,7 +32,7 @@ lang_C#,,C#
 lang_C++,,C++
 lang_C,,C
 lang_Perl,,Perl
-lang_HTML5,,HTML5
+lang_HTML,,HTML5
 lang_None,,None
 lang_Other,,Other (please specify)
 os,Which desktop operating system do you use the most?,Response

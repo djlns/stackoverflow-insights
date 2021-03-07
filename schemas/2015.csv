@@ -7,7 +7,7 @@ dev_type,Occupation
 os,Desktop Operating System
 os_other,Desktop Operating System: write-in
 lang_Android,Current Lang & Tech: Android
-lang_Arduino/RaspberryPi,Current Lang & Tech: Arduino
+lang_ArduinoRPi,Current Lang & Tech: Arduino
 lang_AngularJS,Current Lang & Tech: AngularJS
 lang_C,Current Lang & Tech: C
 lang_C++,Current Lang & Tech: C++
@@ -30,7 +30,7 @@ lang_LAMP,Current Lang & Tech: LAMP
 lang_Matlab,Current Lang & Tech: Matlab
 lang_MongoDB,Current Lang & Tech: MongoDB
 lang_Node.js,Current Lang & Tech: Node.js
-lang_Objective-C,Current Lang & Tech: Objective-C
+lang_ObjectiveC,Current Lang & Tech: Objective-C
 lang_Perl,Current Lang & Tech: Perl
 lang_PHP,Current Lang & Tech: PHP
 lang_Python,Current Lang & Tech: Python
@@ -43,7 +43,7 @@ lang_Scala,Current Lang & Tech: Scala
 lang_Sharepoint,Current Lang & Tech: Sharepoint
 lang_Spark,Current Lang & Tech: Spark
 lang_SQL,Current Lang & Tech: SQL
-lang_SQL Server,Current Lang & Tech: SQL Server
+lang_SQLServer,Current Lang & Tech: SQL Server
 lang_Swift,Current Lang & Tech: Swift
 lang_VisualBasic,Current Lang & Tech: Visual Basic
 lang_WindowsPhone,Current Lang & Tech: Windows Phone
