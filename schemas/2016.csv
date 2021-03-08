@@ -5,7 +5,7 @@ age,age_range,How old are you?
 age_midpoint,age_midpoint,Age inferred by age range
 gender,gender,What is your gender?
 self_identification,self_identification,What do you consider yourself? (select all that apply)
-dev_type,occupation,Which of the following best describes your occupation?
+occupation,occupation,Which of the following best describes your occupation?
 occupation_group,occupation_group,Inferred from occupation
 years_coding,experience_range,How many years of IT / programming experience do you have?
 experience_midpoint,experience_midpoint,Inferred from experience_range

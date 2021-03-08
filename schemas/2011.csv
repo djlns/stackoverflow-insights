@@ -4,7 +4,7 @@ age,How old are you?,Response
 years_coding,How many years of IT/Programming experience do you have?,Response
 industry,How would you best describe the industry you work in?,Response
 org_size,Which best describes the size of your company?,Response
-dev_type,Which of the following best describes your occupation?,Response
+occupation,Which of the following best describes your occupation?,Response
 recommendation_likelihood,How likely is it that a recommendation you make will be acted upon?,Response
 purchaser_influencer,What is your involvement in purchasing? You can choose more than 1.,Influencer
 purchaser_recommender,,Recommender

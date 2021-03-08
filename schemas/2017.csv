@@ -12,7 +12,7 @@ industry,CompanyType,Which of the following best describes the type of company o
 years_coding,YearsProgram,How long has it been since you first learned how to program?
 years_codedprof,YearsCodedJob,For how many years have you coded as part of your job?
 years_codedjobpast,YearsCodedJobPast,For how many years did you code as part of your job?
-dev_type,DeveloperType,Which of the following best describe you?
+occupation,DeveloperType,Which of the following best describe you?
 occupation_webdevelopertype,WebDeveloperType,Which of the following best describes you as a Web developer?
 occupation_mobiledevelopertype,MobileDeveloperType,For which of the following platforms do you develop mobile applications?
 occupation_nondevelopertype,NonDeveloperType,Which of the following describe you?

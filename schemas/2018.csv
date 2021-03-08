@@ -7,7 +7,7 @@ employment,Employment,Which of the following best describes your current employm
 education,FormalEducation,Which of the following best describes the highest level of formal education that you’ve completed?
 undergrad,UndergradMajor,You previously indicated that you went to a college or university. Which of the following best describes your main field of study (aka 'major')
 org_size,CompanySize,Approximately how many people are employed by the company or organization you work for?
-dev_type,DevType,Which of the following describe you? Please select all that apply.
+occupation,DevType,Which of the following describe you? Please select all that apply.
 years_coding,YearsCoding,"Including any education, for how many years have you been coding?"
 years_codingprof,YearsCodingProf,For how many years have you coded professionally (as a part of your work)?
 satisfaction,JobSatisfaction,"How satisfied are you with your current job? If you work more than one job, please answer regarding the one you spend the most hours on."

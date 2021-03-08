@@ -4,7 +4,7 @@ state,Which US State or Territory do you live in?,Response
 age,How old are you?,Response
 gender,What is your gender?,Response
 years_coding,How many years of IT/Programming experience do you have?,Response
-dev_type,Which of the following best describes your occupation?,Response
+occupation,Which of the following best describes your occupation?,Response
 salary,"Including bonus,what is your annual compensation in USD?",Response
 industry,How would you best describe the industry you currently work in?,Response
 developer_count,How many developers are employed at your company?,Response

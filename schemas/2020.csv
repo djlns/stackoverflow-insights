@@ -11,7 +11,7 @@ currencydesc,CurrencyDesc,"Which currency do you use day-to-day? If your answer 
 currencysymbol,CurrencySymbol,"Which currency do you use day-to-day? If your answer is complicated, please pick the one you're most comfortable estimating in."
 databasedesirenextyear,DatabaseDesireNextYear,"Which database environments have you done extensive development work in over the past year, and which do you want to work in over the next year? (If you both worked with the database and want to continue to do so, please check both boxes in that row.)"
 databaseworkedwith,DatabaseWorkedWith,"Which database environments have you done extensive development work in over the past year, and which do you want to work in over the next year? (If you both worked with the database and want to continue to do so, please check both boxes in that row.)"
-dev_type,DevType,Which of the following describe you? Please select all that apply.
+occupation,DevType,Which of the following describe you? Please select all that apply.
 education,EdLevel,Which of the following best describes the highest level of formal education that you’ve completed?
 employment,Employment,Which of the following best describes your current employment status?
 ethnicity,Ethnicity,"Which of the following describe you, if any? Please check all that apply. If you prefer not to answer, you may leave this question blank."

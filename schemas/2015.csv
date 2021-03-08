@@ -3,7 +3,7 @@ age,Age
 gender,Gender
 tabs_spaces,Tabs or Spaces
 years_coding,Years IT / Programming Experience
-dev_type,Occupation
+occupation,Occupation
 os,Desktop Operating System
 os_other,Desktop Operating System: write-in
 lang_Android,Current Lang & Tech: Android

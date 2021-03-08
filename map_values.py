@@ -1,6 +1,6 @@
 import numpy as np
 
-values_map = {
+value_map = {
     "salary": {
         "$10,000 - $20,000" : 150000,
         "$100,000 - $110,000" : 105000,
@@ -86,18 +86,18 @@ values_map = {
         "< 20" : 18,
         "> 60" : 65,
         ">60" : 65,
-        "Prefer not to disclose" : np.na,
+        "Prefer not to disclose" : np.nan,
         "Under 18 years old" : 16,
     },
     "gender": {
         "Female" : "female",
-        "Gender non-conforming" : "non-conforming",
+        "Gender non-conforming" : "other",
         "Male" : "male",
         "Man" : "male",
         "Non-binary, genderqueer, or gender non-conforming" : "other",
         "Other" : "other",
         "Prefer not to disclose" : np.nan,
-        "Transgender" : "transgender",
+        "Transgender" : "other",
         "Woman" : "female",
     },
     "years_coding": {
@@ -199,7 +199,7 @@ values_map = {
         "Less than a year" : 0,
         "More than 50 years" : 55,
     },
-    "dev_type": {
+    "occupation": {
         "Academic researcher" : "academic",
         "Analyst" : "analyst",
         "Back-End Web Developer" : "dev_web_backend",
@@ -413,7 +413,7 @@ values_map = {
         "Doctoral degree" : "doctoral",
         'Full-time, intensive program (e.g. "boot-camp")' : "bootcamp",
         "I never completed any formal education" : "no_formal",
-        "I prefer not to answer" : np.nan,
+        "I prefer not to answer" : "other",
         "I'm self-taught" : "self_taught",
         "Industry certification program" : "industry_cert",
         "Master's degree" : "masters",
@@ -532,7 +532,7 @@ values_map = {
         "Node.js" : "Node.ja",
         "Objective-C" : "ObjectiveC",
         "Ocaml" : "Ocaml",
-        "Other(s):" : np.nan,
+        "Other(s):" : "Other",
         "PHP" : "PHP",
         "Perl" : "Perl",
         "Python" : "Python",

@@ -10,7 +10,7 @@ education,EdLevel,Which of the following best describes the highest level of for
 undergrad,UndergradMajor,What was your main or most important field of study?
 edu_other,EduOther,Which of the following types of non-degree education have you used or participated in? Please select all that apply.
 org_size,OrgSize,Approximately how many people are employed by the company or organization you work for?
-dev_type,DevType,Which of the following describe you? Please select all that apply.
+occupation,DevType,Which of the following describe you? Please select all that apply.
 years_coding,YearsCode,"Including any education, how many years have you been coding?"
 age1stcode,Age1stCode,"At what age did you write your first line of code or program? (E.g., webpage, Hello World, Scratch project)"
 years_codingprof,YearsCodePro,How many years have you coded professionally (as a part of your work)?
