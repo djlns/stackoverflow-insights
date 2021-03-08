@@ -248,15 +248,16 @@ df = pd.concat(surveys)
 
 
 def sel_cols(x):
-    if x in interest_cols:
+    if x in ["survey_year"]+interest_cols:
         return True
     elif any(x.startswith(c+'_') for c in interest_cols):
         return True
     return False
 
 
-fc = df.columns.map(sel_cols)
-df = df.loc[:, fc]
+df = pd.concat(surveys)
+df = df.loc[:, df.columns.map(sel_cols)]
+
 
 # %% lets try something
 
