@@ -1,4 +1,17 @@
-# %%
+""" Condition survey datasets
+
+this script loads and conditions the survey datasets to create
+a single final dataframe containing the columns for the investigation
+
+this is done through the selection of both standard column names and
+categorical data, using extensive use of pandas map function
+
+selection was conducted manually as the process requires domain knowledge
+and some personal judgement
+
+dummy variables / one-hot-encoding is used for multiselect categorical options
+
+"""
 
 import pandas as pd
 from os.path import join
@@ -11,6 +24,26 @@ survey_folder = join("sources", "surveys")
 schema_folder = join("schemas")
 
 pd.set_option('display.max_columns', None)
+
+# columns of interest
+interest_cols = [
+    'salary',
+    'satisfaction',
+    'age',
+    'gender',
+    'years_coding',
+    'occupation',
+    'employment',
+    'industry',
+    'org_size',
+    'job_seek',
+    'remote',
+    'education',
+    'undergrad',
+    'os',
+    'lang',
+    # 'country',  # deal with country later
+]
 
 
 def xzsave(obj, filename):
@@ -72,8 +105,7 @@ def prep_label_standardisation(dfs, cols, split=";"):
     print('}')
 
 
-# %%
-
+# load survey data
 surveys = [
     load(2011, "2011 Stack Overflow Survey Results.csv", 2),
     load(2012, "2012 Stack Overflow Survey Results.csv", 2),
@@ -87,28 +119,7 @@ surveys = [
     load(2020, "developer_survey_2020/survey_results_public.csv", 1),
 ]
 
-# %% columns of interest
-
-interest_cols = [
-    'salary',
-    'satisfaction',
-    'age',
-    'gender',
-    'years_coding',
-    'occupation',
-    'employment',
-    'industry',
-    'org_size',
-    'job_seek',
-    'remote',
-    'education',
-    'undergrad',
-    'os',
-    'lang',
-    # 'country',  # deal with country later
-]
-
-# %% lets see which years have which columns
+# which years have which columns
 
 ft = pd.DataFrame(columns=interest_cols, index=range(2011, 2021))
 for s, y in zip(surveys, range(2011, 2021)):
@@ -133,18 +144,18 @@ print(ft.T)
 # os              1    1    1    1    1    1    0    1    1    1
 # lang            0    0    0    0    0    1    1    1    1    1
 
-# %% develop a mapping dict to manually map values between surveys
-# entries were conducted manually as the process requires domain knowledge
-# and personal judgement
+
+# create value mapping dict template
 
 # prep_label_standardisation(surveys, interest_cols, split=';')
 
 
-# %% the completed map dict has been stored in a separate file
+# the completed map dict is been stored in a separate file
 from map_values import value_map
 
 
-# %% standardise dummy variables - 2011 - 2015 csv files include dummy columns
+# standardise dummy variables 2011 - 2015
+# csv files include dummy columns
 
 split_2011 = [
     "lang",
@@ -156,11 +167,13 @@ for df in surveys[:4]:
         df.loc[:, c] = df.loc[:, c].fillna(0)
         df.loc[:, c] = df.loc[:, c].ne(0).mul(1)
 
-# %% - from 2016, certain columns became multicategorical
+
+# from 2016, certain columns became multicategorical
 # stored as strings separated by ";"
 # also standardise the column names in the process
 # first split string into a list, then remap items and remove duplicates
 # then return to a string so pandas can work it's magic for varibale length lists
+
 
 split_2016 = [
     "occupation",
@@ -190,8 +203,7 @@ for i, df in enumerate(surveys[4:]):
     surveys[i+4] = pd.concat(new_cols, axis=1)
 
 
-# %% also from 2016, gender selection becomes more inclusive
-# that makes it difficult to study, so
+# Also from 2016, gender selection is multiselect
 # lets split the dataset into female, male and other (if more than one is present)
 # this stops double counting, keeps continutity between sets and
 # avoiding more dummy variables
@@ -209,8 +221,7 @@ for df in surveys[4:]:
     df["gender"] = df["gender"].map(map_gender)
 
 
-# %% now, standardise data
-
+# general remapping of values based on the value map
 
 def map_vals(x, col):
     try:
@@ -225,7 +236,7 @@ for df in surveys:
             df[col] = df[col].map(lambda x : map_vals(x, col))
 
 
-# %% modify 2011-2015 datasets to match the dummy format of the later years
+# finally, modify 2011-2015 sets to match the dummy format of the later years
 
 dummy_2016 = [
     "occupation",
@@ -240,12 +251,7 @@ for i, df in enumerate(surveys[:4]):
     surveys[i] = pd.concat(new_cols, axis=1)
 
 
-# %% join them together
-
-df = pd.concat(surveys)
-
-# %% lets pick only the columns we want
-
+# join surveys together into a single dataframe, and then pick desired columns
 
 def sel_cols(x):
     if x in ["survey_year"]+interest_cols:
@@ -259,16 +265,16 @@ df = pd.concat(surveys)
 df = df.loc[:, df.columns.map(sel_cols)]
 
 
-# %% lets try something
+# lets try something
 
 sns.catplot(x="survey_year",       # x variable name
             y="salary",       # y variable name
-            hue="industry",  # group variable name
+            hue="gender",  # group variable name
             data=df,     # dataframe to plot
             kind="bar",
-            estimator=np.sum)
+            estimator=np.average)
 
 
-# %% finally, save the result
+# save the result
 
 xzsave(df, "surveys.pz")
