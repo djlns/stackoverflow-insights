@@ -4,6 +4,8 @@ import pandas as pd
 from os.path import join
 import lzma
 import pickle
+import seaborn as sns
+import numpy as np
 
 survey_folder = join("sources", "surveys")
 schema_folder = join("schemas")
@@ -229,3 +231,43 @@ dummy_2016 = [
     "occupation",
     "education",
 ]
+
+for i, df in enumerate(surveys[:4]):
+    new_cols = [df]
+    for col in dummy_2016:
+        if col in df.columns:
+            new_cols.append(pd.get_dummies(df.pop(col), prefix=col))
+    surveys[i] = pd.concat(new_cols, axis=1)
+
+
+# %% join them together
+
+df = pd.concat(surveys)
+
+# %% lets pick only the columns we want
+
+
+def sel_cols(x):
+    if x in interest_cols:
+        return True
+    elif any(x.startswith(c+'_') for c in interest_cols):
+        return True
+    return False
+
+
+fc = df.columns.map(sel_cols)
+df = df.loc[:, fc]
+
+# %% lets try something
+
+sns.catplot(x="survey_year",       # x variable name
+            y="salary",       # y variable name
+            hue="industry",  # group variable name
+            data=df,     # dataframe to plot
+            kind="bar",
+            estimator=np.sum)
+
+
+# %% finally, save the result
+
+xzsave(df, "surveys.pz")
