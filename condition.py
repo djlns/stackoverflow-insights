@@ -25,7 +25,7 @@ def xzload(filename):
 
 def load(year, csvfile, skiprows):
     """
-    load and standardise survey columns
+    load and standardise survey columns, and add survey year column
     year : (int) survey year
     csvfile : (string) csv file
     skiprows : (int) rows to skip
@@ -70,23 +70,6 @@ def prep_label_standardisation(dfs, cols, split=";"):
     print('}')
 
 
-def manual_dummy(df, cat_cols):
-    """  dummy columns are already present, convert to bool """
-    for col in cat_cols:
-        c = df.columns.map(lambda x: x.startswith(col+'_'))
-        if c.any():
-            df.loc[:, c] = df.loc[:, c].fillna(0)
-            df.loc[:, c] = df.loc[:, c].ne(0).mul(1)
-
-
-def string_dummy(df, cat_cols):
-    """ convert string lists separated by ";" to dummy_cols """
-    for col in cat_cols:
-        a = df.pop(col).str.get_dummies(';', )
-        a = a.rename(columns=lambda x : f'{col}_{x.replace(" ", "")}')
-        df = pd.concat([df, a])
-
-
 # %%
 
 surveys = [
@@ -102,14 +85,7 @@ surveys = [
     load(2020, "developer_survey_2020/survey_results_public.csv", 1),
 ]
 
-xzsave(surveys, "surveys.pz")
-
-# %% reload
-
-surveys = xzload("surveys.pz")
-
 # %% columns of interest
-# note that lang is made up of dummy columns for 2011-2015
 
 interest_cols = [
     'salary',
@@ -117,7 +93,7 @@ interest_cols = [
     'age',
     'gender',
     'years_coding',
-    'dev_type',
+    'occupation',
     'employment',
     'industry',
     'org_size',
@@ -144,7 +120,7 @@ print(ft.T)
 # age             1    1    1    1    1    1    0    1    1    1
 # gender          0    0    0    1    1    1    1    1    1    1
 # years_coding    1    1    1    1    1    1    1    1    1    1
-# dev_type        1    1    1    1    1    1    1    1    1    1
+# occupation      1    1    1    1    1    1    1    1    1    1
 # employment      0    0    0    0    1    1    1    1    1    1
 # industry        1    1    1    1    1    1    1    0    0    0
 # org_size        1    1    1    0    0    1    1    1    1    1
@@ -155,12 +131,18 @@ print(ft.T)
 # os              1    1    1    1    1    1    0    1    1    1
 # lang            0    0    0    0    0    1    1    1    1    1
 
-# %% manually map values between surveys where possible
+# %% develop a mapping dict to manually map values between surveys
+# entries were conducted manually as the process requires domain knowledge
+# and personal judgement
 
-prep_label_standardisation(surveys, interest_cols, split=';')
+# prep_label_standardisation(surveys, interest_cols, split=';')
 
 
-# %% 
+# %% the completed map dict has been stored in a separate file
+from map_values import value_map
+
+
+# %% standardise dummy variables - 2011 - 2015 csv files include dummy columns
 
 split_2011 = [
     "lang",
