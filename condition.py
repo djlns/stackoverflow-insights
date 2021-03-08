@@ -148,7 +148,84 @@ split_2011 = [
     "lang",
 ]
 
-split_2017 = [
-    "dev_type",
+for df in surveys[:4]:
+    for col in split_2011:
+        c = df.columns.map(lambda x: x.startswith(col+'_'))
+        df.loc[:, c] = df.loc[:, c].fillna(0)
+        df.loc[:, c] = df.loc[:, c].ne(0).mul(1)
+
+# %% - from 2016, certain columns became multicategorical
+# stored as strings separated by ";"
+# also standardise the column names in the process
+# first split string into a list, then remap items and remove duplicates
+# then return to a string so pandas can work it's magic for varibale length lists
+
+split_2016 = [
+    "occupation",
+    "education",
+    "lang",
+]
+
+
+def map_vals_list(x, col):
+    try:
+        return ';'.join(set([value_map[col][xi] for xi in x]))
+    except TypeError:
+        return x
+
+
+for i, df in enumerate(surveys[4:]):
+    print(pd.unique(df['survey_year']))
+    new_cols = [df]
+    for col in split_2016:
+        if col in df:
+            a = df.pop(col)
+            a = a.str.split(r'\s*;\s*')
+            a = a.map(lambda x: map_vals_list(x, col))
+            a = a.str.get_dummies(';')
+            a = a.rename(columns=lambda x : f'{col}_{x}')
+            new_cols.append(a)
+    surveys[i+4] = pd.concat(new_cols, axis=1)
+
+
+# %% also from 2016, gender selection becomes more inclusive
+# that makes it difficult to study, so
+# lets split the dataset into female, male and other (if more than one is present)
+# this stops double counting, keeps continutity between sets and
+# avoiding more dummy variables
+
+def map_gender(x):
+    if x == np.nan:
+        return
+    try:
+        return value_map["gender"][x]
+    except KeyError:
+        return "other"
+
+
+for df in surveys[4:]:
+    df["gender"] = df["gender"].map(map_gender)
+
+
+# %% now, standardise data
+
+
+def map_vals(x, col):
+    try:
+        return value_map[col][x]
+    except KeyError:
+        return x
+
+
+for df in surveys:
+    for col in interest_cols:
+        if col in df.columns:
+            df[col] = df[col].map(lambda x : map_vals(x, col))
+
+
+# %% modify 2011-2015 datasets to match the dummy format of the later years
+
+dummy_2016 = [
+    "occupation",
     "education",
 ]
