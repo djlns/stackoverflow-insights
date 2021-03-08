@@ -38,7 +38,7 @@ def load(year, csvfile, skiprows):
         header=None
     )
     df['survey_year'] = year
-    print(f"respondants: {df.shape[0]}, columns: {df.shape[1]}")
+    print(f"respondents: {df.shape[0]}, columns: {df.shape[1]}")
     return df
 
 
