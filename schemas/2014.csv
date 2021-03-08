@@ -9,8 +9,8 @@ salary,"Including bonus,what is your annual compensation in USD?",Response
 industry,How would you best describe the industry you currently work in?,Response
 developer_count,How many developers are employed at your company?,Response
 remote,Do you work remotely?,Response
-remote_enjoyment,Do you enjoy working remotely?,Response
-remote_location,Where do you work remotely most of the time?,Response
+rem_enjoyment,Do you enjoy working remotely?,Response
+rem_location,Where do you work remotely most of the time?,Response
 mobileapp_iPhone,"If your company has a native mobile app,what platforms do you support?",iPhone
 mobileapp_iPad,,iPad
 mobileapp_Android,,Android Phone

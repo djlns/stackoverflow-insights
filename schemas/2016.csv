@@ -2,15 +2,15 @@ country,country,In what country do you currently reside?
 un_subregion,un_subregion,Region inferred by country location (UN region)
 so_region,so_region,Region inferred by country location (semi-arbitrary Stack Overflow region groupings)
 age,age_range,How old are you?
-age_midpoint,age_midpoint,Age inferred by age range
+midpoint_age,age_midpoint,Age inferred by age range
 gender,gender,What is your gender?
 self_identification,self_identification,What do you consider yourself? (select all that apply)
 occupation,occupation,Which of the following best describes your occupation?
-occupation_group,occupation_group,Inferred from occupation
+occ_group,occupation_group,Inferred from occupation
 years_coding,experience_range,How many years of IT / programming experience do you have?
 experience_midpoint,experience_midpoint,Inferred from experience_range
 salary,salary_range,What is your annual gross earnings or salary (including bonus) in USD?
-salary_midpoint,salary_midpoint,Inferred from salary_range
+sal_midpoint,salary_midpoint,Inferred from salary_range
 big_mac_index,big_mac_index,Jan 2016 Big Mac Index for country from: http://www.economist.com/content/big-mac-index
 lang,tech_do,Which of the following languages or technologies have you done extensive development with in the last year? (select all that apply)
 interest,tech_want,Which of the following languages or technologies do you WANT to work with this year? (select all that apply)

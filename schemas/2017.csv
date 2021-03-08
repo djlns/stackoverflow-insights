@@ -13,9 +13,9 @@ years_coding,YearsProgram,How long has it been since you first learned how to pr
 years_codedprof,YearsCodedJob,For how many years have you coded as part of your job?
 years_codedjobpast,YearsCodedJobPast,For how many years did you code as part of your job?
 occupation,DeveloperType,Which of the following best describe you?
-occupation_webdevelopertype,WebDeveloperType,Which of the following best describes you as a Web developer?
-occupation_mobiledevelopertype,MobileDeveloperType,For which of the following platforms do you develop mobile applications?
-occupation_nondevelopertype,NonDeveloperType,Which of the following describe you?
+occu_web,WebDeveloperType,Which of the following best describes you as a Web developer?
+occu_mobile,MobileDeveloperType,For which of the following platforms do you develop mobile applications?
+occu_nondev,NonDeveloperType,Which of the following describe you?
 career_satisfaction,CareerSatisfaction,Career satisfaction rating
 satisfaction,JobSatisfaction,Job satisfaction rating
 excoderreturn,ExCoderReturn,"You said before that you used to code as part of your job, but no longer do. To what extent do you agree or disagree with the following statements? If money weren't an issue, I would take a coding job again"
@@ -80,8 +80,8 @@ importanthiringgettingthingsdone,ImportantHiringGettingThingsDone,"Congratulatio
 currency,Currency,"Which currency do you use day-to-day? If you're a globe-trotting digital nomad and the answer is “it's complicated,” please pick the one you're most comfortable estimating in."
 overpaid,Overpaid,"Compared to your estimate of your own market value, do you think you are…?"
 tabs_spaces,TabsSpaces,Tabs or spaces?
-education_important,EducationImportant,"Overall, how important has your formal schooling and education been to your career success?"
-education_types,EducationTypes,"Outside of your formal schooling and education, which of the following have you done?"
+edu_important,EducationImportant,"Overall, how important has your formal schooling and education been to your career success?"
+edu_other,EducationTypes,"Outside of your formal schooling and education, which of the following have you done?"
 selftaughttypes,SelfTaughtTypes,"You indicated that you had taught yourself a programming technology without taking a course. What resources did you use to do that? If you've done it more than once, please think about the most recent time you've done so."
 timeafterbootcamp,TimeAfterBootcamp,You indicated previously that you went through a developer “bootcamp.” How long did it take you to get a full-time job as a developer after graduating?
 let_cousin,CousinEducation,"Let's pretend you have a distant cousin. They are 24 years old, have a college degree in a field not related to computer programming, and have been working a non-coding job for the last two years. They want your advice on how to switch to a career as a software developer. Which of the following options would you most strongly recommend to your cousin?
@@ -90,11 +90,11 @@ let_female,Let's pretend you have a distant cousin named Alice. She is 24 years 
 workstart,WorkStart,Suppose you could choose your own working hours for an 8-hour day. What time would you start work for the day? Please adjust the slider to the hour nearest your ideal start time. The box next to the slider will display your selection using a 24-hour clock
 lang,HaveWorkedLanguage,"Which of the following languages have you done extensive development work in over the past year, and which do you want to work in over the next year?"
 interest,WantWorkLanguage,"Which of the following languages have you done extensive development work in over the past year, and which do you want to work in over the next year?"
-haveworkedframework,HaveWorkedFramework,"Which of the following libraries, frameworks, and tools have you done extensive development work in over the past year, and which do you want to work in over the next year?"
+framework,HaveWorkedFramework,"Which of the following libraries, frameworks, and tools have you done extensive development work in over the past year, and which do you want to work in over the next year?"
 wantworkframework,WantWorkFramework,"Which of the following libraries, frameworks, and tools have you done extensive development work in over the past year, and which do you want to work in over the next year?"
-haveworkeddatabase,HaveWorkedDatabase,"Which of the following database technologies have you done extensive development work in over the past year, and which do you want to work in over the next year?"
+database,HaveWorkedDatabase,"Which of the following database technologies have you done extensive development work in over the past year, and which do you want to work in over the next year?"
 wantworkdatabase,WantWorkDatabase,"Which of the following database technologies have you done extensive development work in over the past year, and which do you want to work in over the next year?"
-haveworkedplatform,HaveWorkedPlatform,"Which of the following platforms have you done extensive development work for over the past year, and which do you want to work on over the next year?"
+platform,HaveWorkedPlatform,"Which of the following platforms have you done extensive development work for over the past year, and which do you want to work on over the next year?"
 wantworkplatform,WantWorkPlatform,"Which of the following platforms have you done extensive development work for over the past year, and which do you want to work on over the next year?"
 ide,IDE,Which development environment(s) do you use regularly?
 auditoryenvironment,AuditoryEnvironment,"Suppose you're about to start a few hours of coding and have complete control over your auditory environment (music, background noise, etc.). What would you do?"
