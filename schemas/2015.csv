@@ -100,7 +100,7 @@ education_mentor,Training & Education: Mentorship
 education_industry_cert,Training & Education: Industry certification
 education_college,"Training & Education: Some college but no CS degree"
 education_bachelors,Training & Education: BS in CS
-education_master,Training & Education: Masters in CS
+education_masters,Training & Education: Masters in CS
 education_doctoral,Training & Education: PhD in CS
 education_other,Training & Education: Other
 salary,Compensation
