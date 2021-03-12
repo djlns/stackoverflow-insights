@@ -5,8 +5,8 @@ import pandas as pd
 import matplotlib as mpl
 import seaborn as sns
 
-survey_folder = join("sources", "surveys")
-schema_folder = join("schemas")
+survey_folder = "sources"
+schema_folder = "schemas"
 
 
 def xzsave(obj, filename):
@@ -91,9 +91,9 @@ def stackplot(df, title, baseline='zero', cmap="mako", lw=0.5, ax=None):
 def mpl_defs(width=1, height=1):
     """ set default colours """
     c = [
-        "#FF4500",
         "#010595",
         "#0095FF",
+        "#FF4500",
         "#00BE68",
         "#FF9000",
         "#484554",
@@ -145,3 +145,5 @@ def mpl_defs(width=1, height=1):
     mpl.rcParams["legend.labelspacing"] = 0.4
     mpl.rcParams["legend.columnspacing"] = 1.2
     mpl.rcParams["grid.linewidth"] = 0.2
+
+    return c
