@@ -5,15 +5,24 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import numpy as np
 
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression, Lasso, Ridge
+from sklearn.metrics import r2_score
+from sklearn.decomposition import PCA
+from sklearn.preprocessing import StandardScaler
+
 from routines import xzload, mpl_defs, stackplot
 
 mpl_defs()
 
-pd.set_option('display.max_rows', None)
-pd.set_option('display.max_columns', None)
+# pd.set_option('display.max_rows', None)
+# pd.set_option('display.max_columns', None)
+
+target_cols = [
+    'salary',
+]
 
 numerical_cols = [
-    'salary',
     'age',
     'years_coding',
     'org_size',
@@ -35,14 +44,56 @@ dummy_cols = [
 ]
 
 other = [
-    'undergrad',
-    'countries',
     'survey_year',
+    'countries',
 ]
 
 df = xzload("surveys.pz")
+
+for col in df.columns:
+    if col.startswith("occupation_") or col.startswith("education_"):
+        df[col].isna() == 0
+        # df[col] = df[col].astype('category')
+
+
 df.describe()
 
+# %% age
+
+fig, ax = plt.subplots()
+g = sns.violinplot(data=df, x="survey_year", y="age", ax=ax)
+ax.set_ylim(0,100)
+
+age = df.groupby("survey_year")["age"].agg(["mean", "std"]).drop(2017)
+fig, ax = plt.subplots()
+ax.errorbar(age.index, age["mean"], age["std"])
+
+age
+
+# %% years coding
+
+fig, ax = plt.subplots()
+g = sns.violinplot(data=df, x="survey_year", y="years_coding", ax=ax)
+
+yc = df.groupby("survey_year")["years_coding"].agg(["mean", "std"])
+fig, ax = plt.subplots()
+ax.errorbar(yc.index, yc["mean"], yc["std"])
+
+yc
+
+# %% org
+
+years = [2011, 2012, 2013, 2016, 2017, 2018, 2019, 2020]
+org = df.loc[df.survey_year.isin(years)]
+
+plt.figure()
+sns.violinplot(data=org, x="survey_year", y="org_size")
+plt.figure()
+sns.violinplot(data=org[org.org_size < 1000], x="survey_year", y="org_size")
+plt.figure()
+sns.violinplot(data=org[org.org_size < 200], x="survey_year", y="org_size")
+
+org.groupby("survey_year")["org_size"].agg(["mean", "std"])
 
 # %% operating system!
 
@@ -293,5 +344,175 @@ for axi in ax:
 edu = edu[edu_interest_1+edu_interest_2].drop([2011, 2012, 2013, 2014])
 np.round(edu * 100, 2).T
 
+# %% Salary!
+
+df.groupby('country').agg({'salary':'count'}).sort_values(by='salary', ascending=False).iloc[:10]
+
+countries = [
+    'United States',
+    'United Kingdom',
+    'India',
+    'Germany',
+    'Canada',
+    'France',
+    'Australia',
+    'Russia',
+    # 'Poland',
+    # 'Brazil',
+]
+
+pd.pivot_table(
+    df[df.country.isin(countries)],
+    values='salary',
+    columns=['survey_year'],
+    index='country'
+)
+
+sns.violinplot(x='survey_year',y='salary',data=df.loc[df.country == "United States"])
+
+# %%
+Q = 0.95
+ct = df.loc[df.country == "United States"].copy()
+ct = ct[ct["salary"] < ct["salary"].quantile(Q)]
+
+sns.violinplot(x='survey_year',y='salary',data=ct)
+
 # %%
 
+dfc = df[df.country.isin(countries)].copy()
+dfc = dfc[dfc["salary"] < dfc["salary"].quantile(Q)]
+
+pd.pivot_table(dfc, values='salary', columns=['survey_year'], index='country')
+
+g = sns.catplot(
+    x="country",
+    y="salary",
+    hue="survey_year",
+    data=dfc,
+    kind="bar",
+    estimator=np.mean
+)
+
+# %% focus on US only
+
+for year in range(2010,2021):
+
+    dropcols = [
+        'occupation_dev_server',
+        'occupation_dev_kernel',
+        'occupation_non-tech'
+    ]
+
+    Q = 0.95
+    ct = df.loc[df.survey_year == year]
+    ct = ct.loc[ct.country == "United States"].drop(dropcols, axis=1).copy()
+    ct = ct[ct["salary"] < ct["salary"].quantile(Q)]
+
+    covlist = ct.corr().unstack().drop_duplicates().sort_values()
+    covlist = covlist[covlist < 1]  # remove self correlation
+
+    covsort = []
+    for (f1, f2), c in covlist.iteritems():
+        if f1 == 'salary':
+            covsort.append(f2)
+        elif f2 == 'salary':
+            covsort.append(f1)
+
+    covmat = ct[['salary']+covsort[::-1]].corr()
+
+    mask = np.triu(np.ones_like(covmat, dtype=bool))
+    f, ax = plt.subplots(figsize=(11, 9))
+    cmap = sns.diverging_palette(230, 20, as_cmap=True)
+    sns.heatmap(covmat, mask=mask, cmap=cmap, vmax=.3, center=0,
+                square=True, linewidths=.5, cbar_kws={"shrink": .5})
+
+    covmat["salary"]
+
+# %% final step, lets see how a simple model can fit the data
+
+
+def clean_data(df):
+
+    df = df.copy()
+    df.dropna(subset=['salary'], inplace=True)
+    df.dropna(how='all', axis=1, inplace=True)
+
+    y = df['salary']
+    df.drop('salary', axis=1, inplace=True)
+
+    # separate numerical from categorical
+    df_num = df.select_dtypes(include=np.number)
+    df_cat = df.select_dtypes(include='object')
+
+    # join numerical with nan filled with mean and one hot encoding for categorical
+    X = pd.concat([
+        df_num.apply(lambda col: col.fillna(col.mean())),
+        pd.get_dummies(df_cat, dummy_na=False, drop_first=True)
+    ], axis=1)
+
+    return X, y
+
+
+def run_regression(X, y, cutoff=0, alpha=0, test_size=.3, random_state=19):
+    '''
+    INPUT
+    X - pandas dataframe, X matrix
+    y - pandas dataframe, response variable
+    cutoff - int, cutoff for number of non-zero values in dummy categorical vars
+    alpha - float, L1-regularizer
+    test_size - float between 0 and 1, default 0.3, determines the proportion of data as test data
+    random_state - int, default 19, controls random state for train_test_split
+
+    OUTPUT
+    r2_scores_test - list of floats of r2 scores on the test data
+    r2_scores_train - list of floats of r2 scores on the train data
+    lm_model - model object from sklearn
+    X_train, X_test, y_train, y_test - output from sklearn train test split used for optimal model
+    '''
+
+    reduce_X = X.iloc[:, (X.sum() > cutoff).values]
+
+    X_train, X_test, y_train, y_test = train_test_split(
+            reduce_X,
+            y,
+            test_size=test_size,
+            random_state=random_state,
+        )
+
+    scaler = StandardScaler()
+    X_train = scaler.fit_transform(X_train)
+    X_test = scaler.transform(X_test)
+
+    if alpha == 0:
+        lm_model = LinearRegression()
+    else:
+        lm_model = Ridge(alpha=alpha)
+
+    lm_model.fit(X_train, y_train)
+
+    # Predict using your model
+    y_test_preds = lm_model.predict(X_test)
+    y_train_preds = lm_model.predict(X_train)
+
+    # Score using your model
+    test_score = r2_score(y_test, y_test_preds)
+    train_score = r2_score(y_train, y_train_preds)
+
+    print(reduce_X.shape)
+    print(train_score, test_score)
+
+    return test_score, train_score, lm_model, X_train, X_test, y_train, y_test
+
+
+Q = 0.95
+df2 = df[df["salary"] < df["salary"].quantile(Q)]
+# df2 = df2.loc[df.country == "United States"].drop("country", axis=1)
+
+X, y = clean_data(df2)
+result = run_regression(X, y, alpha=0.01, cutoff=0)
+
+# %%
+
+
+
+# %%
