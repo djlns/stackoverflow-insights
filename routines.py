@@ -103,6 +103,14 @@ def mpl_defs(width=1, height=1):
         "#60dd49",
         "#A50021",
     ]
+    mpl.rcParams["font.sans-serif"] = "Helvetica"
+    mpl.rcParams["mathtext.fontset"] = "custom"
+    mpl.rcParams["mathtext.rm"] = "Helvetica"
+    mpl.rcParams["mathtext.it"] = "Helvetica:italic"
+    mpl.rcParams["mathtext.bf"] = "Helvetica:bold"
+    mpl.rcParams["mathtext.sf"] = "Helvetica"
+    mpl.rcParams["mathtext.tt"] = "Helvetica"
+    mpl.rcParams["mathtext.cal"] = "Helvetica:italic"
     mpl.rcParams["figure.figsize"] = 3.375 * width, 2.8 * height
     mpl.rcParams["figure.constrained_layout.use"] = True
     mpl.rcParams["axes.prop_cycle"] = mpl.cycler(color=c)
