@@ -69,7 +69,7 @@ def prep_label_standardisation(dfs, cols, split=";"):
     print('}')
 
 
-def stackplot(df, title, baseline='zero', cmap="mako", lw=0.5, ax=None):
+def stackplot(df, title=None, baseline='zero', cmap="mako", lw=0.5, ax=None):
     """ creates a stackplot with preferred defaults """
     if ax is None:
         fig, ax = mpl.pyplot.subplots()
@@ -83,7 +83,8 @@ def stackplot(df, title, baseline='zero', cmap="mako", lw=0.5, ax=None):
         linewidth=lw
     )
     ax.legend(frameon=True)
-    ax.set_title(title)
+    if title:
+        ax.set_title(title)
     ax.set_xticks(range(2011,2021))
     ax.margins(0,0)
     return ax
