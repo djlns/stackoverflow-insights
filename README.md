@@ -28,4 +28,4 @@ Each year's survey is contained in a separate .csv file. These files can be acce
 
 ## License and Acknowledgements
 
-You can find the Stack Overflow survey reports, datasets, and licensing information [here](https://insights.stackoverflow.com/survey). Credit to Stack Overflow for conducting the survey each year and freely providing the results. The work here licensed under the MIT License, so feel free to extend the code.
+You can find the Stack Overflow survey reports, datasets, and licensing information [here](https://insights.stackoverflow.com/survey). All credit to Stack Overflow for conducting the survey each year and freely providing the results. The work here is licensed under the MIT License, so feel free to copy and extend the code!
