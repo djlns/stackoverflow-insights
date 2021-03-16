@@ -70,6 +70,7 @@ def prep_label_standardisation(dfs, cols, split=";"):
 
 
 def stackplot(df, title, baseline='zero', cmap="mako", lw=0.5, ax=None):
+    """ creates a stackplot with preferred defaults """
     if ax is None:
         fig, ax = mpl.pyplot.subplots()
     ax.stackplot(
@@ -89,7 +90,7 @@ def stackplot(df, title, baseline='zero', cmap="mako", lw=0.5, ax=None):
 
 
 def mpl_defs(width=1, height=1):
-    """ set default colours """
+    """ set preferred default matplotlib settings and colours """
     c = [
         "#010595",
         "#0095FF",
