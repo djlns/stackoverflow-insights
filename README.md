@@ -8,10 +8,10 @@ The field of computing has developed incredibly rapidly over the past decade. Ho
 
 To investigate, this project uses the combined results from the [Stack Overflow](https://www.stackoverflow.com) Annual Developer survey, which has been conducted since 2011. It covers everything from favourite technologies to questions about careers, salaries and job preferences. In 2020 around 65,000 developers participated in the 20 minute survey, making it an unparalleled source of information regarding the field.
 
-In particular I was interesting in the following questions:
+In particular I was interested in the following questions:
 
 1. What are the notable changes in demographics - e.g. in age, gender, education?
-2. Do personal factors like satisfaction also show disernable trends?
+2. Do personal factors like satisfaction also show discernible trends?
 3. How has the data science grown, and how has informal education like bootcamps and online courses evolved over this same period?
 4. What of these factors have influenced salary?
 5. Can we make a reasonable prediction of salary based upon these factors?
@@ -19,7 +19,7 @@ In particular I was interesting in the following questions:
 
 ### Understanding the data
 
-Each survey is contained in a separate .csv file. However, each year the types of question, the way they are asked, and even how they can be answered changes. As such, the first step was to study each survey and identify common questions. In the schemas folder, the questions from each year are listed in separate csv files. At the same time, the question names were standardised so they could be prepared and cominbined into a single dataset in the next step.
+Each survey is contained in a separate .csv file. However, each year the types of question, the way they are asked, and even how they can be answered changes. As such, the first step was to study each survey and identify common questions. In the schemas folder, the questions from each year are listed in separate csv files. At the same time, the question names were standardised so they could be prepared and combined into a single dataset in the next step.
 
 
 ### Data preparation
@@ -33,7 +33,7 @@ The preparation of the data, which involves cleaning the data, transforming the 
 - years_coding: How many years have you spent coding?
 - occupation: How would you describe your occupation?
 - industry: Which industry do you work in?
-- satisfaction: How satisifed are you at work?
+- satisfaction: How satisfied are you at work?
 - job_seek: Are you currently looking for new opportunities?
 - employment: What is your employment type (full-time/part-time)?
 - org_size: What is your organisation size?
@@ -41,7 +41,7 @@ The preparation of the data, which involves cleaning the data, transforming the 
 - education: What is your education level (formal and informal)
 - os: Which operating system do you use / prefer?
 
-The combined dataset was then saved into a single pandas pickled dataframe (surveys.pz).
+The combined dataset was then saved into a single pandas pickled DataFrame (surveys.pz).
 
 
 ### Analysis & Modelling
@@ -69,3 +69,4 @@ Each year's survey is contained in a separate .csv file. These files can be acce
 ## License and Acknowledgements
 
 You can find the Stack Overflow survey reports, datasets, and licensing information [here](https://insights.stackoverflow.com/survey). All credit to Stack Overflow for conducting the survey each year and freely providing the results. The work here is licensed under the MIT License, so feel free to copy and extend the code!
+
