@@ -46,12 +46,12 @@ The combined dataset was then saved into a single pandas pickled dataframe (surv
 
 ### Analysis & Modelling
 
-With this work complete, it was then possible to conduct an exploratory analysis of the entire dataset. This analysis is presented in the [analysis notebook](https://github.com/djlns/stackoverflow-insights/blob/main/condition.ipynb)
+With this work complete, it was then possible to conduct an exploratory analysis of the entire dataset to address the project questions. This is presented in the [analysis notebook](https://github.com/djlns/stackoverflow-insights/blob/main/condition.ipynb)
 
 
 ### Evaluation
 
-Modelling with salary as the target focused on a simple linear regression with L2-regularisation (Ridge regressor) as a preliminary evaluation of whether or not a prediction of salary based upon the other factors. The resulting train/test R2-score of 0.63 / 0.63 is not amazing, but it is a promising first step. Further improvement would require more careful conditioning with better approaches to imputing and the combination of the datasets, address multicollinearity between the predictors, and perhaps moving beyond a simple linear regression model.
+Modelling with salary as the target focused on a simple linear regression with L2-regularisation (ridge regressor) as a preliminary evaluation of whether or not a prediction of salary can be made based upon the other factors in the dataset. The resulting train/test R2-score of 0.63 / 0.63 is not amazing, indeed shows that it is possible in a promising first step. Further improvements could include more careful data conditioning with better approaches to imputing and the combination of the datasets, addressing multicollinearity between the predictors, and perhaps moving beyond a simple linear regression model.
 
 
 ### Findings
