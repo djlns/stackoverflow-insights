@@ -51,7 +51,7 @@ With this work complete, it was then possible to conduct an exploratory analysis
 
 ### Evaluation
 
-Modelling with salary as the target focused on a simple linear regression with L2-regularisation (ridge regressor) as a preliminary evaluation of whether or not a prediction of salary can be made based upon the other factors in the dataset. The resulting train/test R2-score of 0.63 / 0.63, while not amazing, indeed shows that it is indeed possible. Further improvements could include more careful data conditioning with better approaches to imputing and the combination of the datasets, addressing multicollinearity between the predictors, and perhaps moving beyond a simple linear regression model.
+A linear regression model with L2-regularisation (ridge regressor) was used as a preliminary test of whether or not a prediction of salary can be made based upon the other factors in the dataset. The resulting train / test R2-score of 0.63 / 0.63 is not amazing, but it shows that it is indeed possible. Further improvements could include more careful data conditioning with better approaches to imputing and the combination of the datasets, addressing multicollinearity between the predictors, and perhaps moving beyond a simple linear regression model.
 
 
 ### Findings
